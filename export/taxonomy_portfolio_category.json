@@ -1,0 +1,338 @@
+[
+    {
+        "id": "14",
+        "uuid": "a397baf7-096f-400b-9085-76d09f1974d3",
+        "name": "Art",
+        "vocabulary": "portfolio_category",
+        "description": null,
+        "weight": "0",
+        "parent": [],
+        "fields": {
+            "revision_id": [
+                {
+                    "value": "14"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "revision_created": [],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": "1"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "1524580588"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_default": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": "1"
+                }
+            ],
+            "path": [
+                {
+                    "alias": "/portfolio/art",
+                    "pid": "4",
+                    "langcode": "en"
+                }
+            ]
+        }
+    },
+    {
+        "id": "1",
+        "uuid": "a31cf05c-ca13-44eb-a495-9c9ec1d2dba1",
+        "name": "Drupal Sites",
+        "vocabulary": "portfolio_category",
+        "description": null,
+        "weight": "0",
+        "parent": [],
+        "fields": {
+            "revision_id": [
+                {
+                    "value": "1"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "revision_created": [],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": "1"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "1524580601"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_default": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": "1"
+                }
+            ],
+            "path": [
+                {
+                    "alias": "/portfolio/drupal",
+                    "pid": "5",
+                    "langcode": "en"
+                }
+            ]
+        }
+    },
+    {
+        "id": "4",
+        "uuid": "11669434-77d5-4e9b-b47e-1d4fd5b54532",
+        "name": "Graphic Design",
+        "vocabulary": "portfolio_category",
+        "description": null,
+        "weight": "0",
+        "parent": [],
+        "fields": {
+            "revision_id": [
+                {
+                    "value": "4"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "revision_created": [],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": "1"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "1524580613"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_default": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": "1"
+                }
+            ],
+            "path": [
+                {
+                    "alias": "/portfolio/graphics",
+                    "pid": "6",
+                    "langcode": "en"
+                }
+            ]
+        }
+    },
+    {
+        "id": "13",
+        "uuid": "a978aad0-cb12-43fe-84c9-5369842cce37",
+        "name": "Interiors",
+        "vocabulary": "portfolio_category",
+        "description": null,
+        "weight": "0",
+        "parent": [],
+        "fields": {
+            "revision_id": [
+                {
+                    "value": "13"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "revision_created": [],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": "1"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "1524580628"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_default": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": "1"
+                }
+            ],
+            "path": [
+                {
+                    "alias": "/portfolio/interiors",
+                    "pid": "7",
+                    "langcode": "en"
+                }
+            ]
+        }
+    },
+    {
+        "id": "2",
+        "uuid": "4888ddfb-264a-459b-952a-12ed36de34cc",
+        "name": "Non-digital Creations",
+        "vocabulary": "portfolio_category",
+        "description": null,
+        "weight": "0",
+        "parent": [],
+        "fields": {
+            "revision_id": [
+                {
+                    "value": "2"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "revision_created": [],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": "1"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "1524580649"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_default": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": "1"
+                }
+            ],
+            "path": [
+                {
+                    "alias": "/portfolio/non-digital",
+                    "pid": "8",
+                    "langcode": "en"
+                }
+            ]
+        }
+    },
+    {
+        "id": "3",
+        "uuid": "e576b614-89d2-46b7-9ee0-be9c01fcd651",
+        "name": "Other Websites & Applications",
+        "vocabulary": "portfolio_category",
+        "description": null,
+        "weight": "0",
+        "parent": [],
+        "fields": {
+            "revision_id": [
+                {
+                    "value": "3"
+                }
+            ],
+            "langcode": [
+                {
+                    "value": "en"
+                }
+            ],
+            "revision_created": [],
+            "revision_user": [],
+            "revision_log_message": [],
+            "status": [
+                {
+                    "value": "1"
+                }
+            ],
+            "changed": [
+                {
+                    "value": "1524580679"
+                }
+            ],
+            "default_langcode": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_default": [
+                {
+                    "value": "1"
+                }
+            ],
+            "revision_translation_affected": [
+                {
+                    "value": "1"
+                }
+            ],
+            "path": [
+                {
+                    "alias": "/portfolio/applications",
+                    "pid": "9",
+                    "langcode": "en"
+                }
+            ]
+        }
+    }
+]

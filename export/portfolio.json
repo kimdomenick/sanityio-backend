@@ -1,0 +1,2462 @@
+[
+    {
+        "id": "1",
+        "uuid": "30b6f701-6a3f-466e-b32f-9f8824415149",
+        "title": "Connect Promo",
+        "type": "portfolio",
+        "created": "2018-04-04T13:51:29-04:00",
+        "changed": "2019-05-13T14:25:39-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "164"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1557771939"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": [],
+            "path": {
+                "alias": "/graphic-design/connect-promo",
+                "pid": "23",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span>Promotional banner for social networking seminar. Designed in Adobe Photoshop.</span></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "3",
+                "alt": "Connect Promo",
+                "title": "",
+                "width": "392",
+                "height": "459",
+                "url": "/sites/default/files/2018-04/Connect.png",
+                "filename": "Connect.png",
+                "filesize": "142289",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "4",
+                "term_name": "Graphic Design",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Promotional banner for seminar",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "2",
+        "uuid": "d4dbcea2-93de-437b-894b-e15d8fe3727e",
+        "title": "Outdoors/Hunting Enthusiast Site",
+        "type": "portfolio",
+        "created": "2018-04-04T13:53:16-04:00",
+        "changed": "2019-05-21T09:57:59-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "169"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558447079"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/graphic-design/outdoorshunting-enthusiast-site",
+                "pid": "24",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span>Full mock-up for custom camouflaging company and outdoors/hunting/shooting enthusiasts. Built on Drupal 7, Omega theme.</span></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "4",
+                "alt": "Website Mock-up",
+                "title": "",
+                "width": "1024",
+                "height": "1017",
+                "url": "/sites/default/files/2018-04/Hidden-Omega-Front-Page.png",
+                "filename": "Hidden-Omega-Front-Page.png",
+                "filesize": "766189",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": [
+                {
+                    "target_id": "4",
+                    "term_name": "Graphic Design",
+                    "term_vocabulary": "portfolio_category"
+                },
+                {
+                    "target_id": "1",
+                    "term_name": "Drupal Sites",
+                    "term_vocabulary": "portfolio_category"
+                }
+            ],
+            "field_short_description": {
+                "value": "Site design for custom camouflaging company",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "mockup"
+            }
+        }
+    },
+    {
+        "id": "3",
+        "uuid": "5862eaf1-531a-4226-b27c-c71cf559cc6d",
+        "title": "News Pop Full Mock-up/PHP app",
+        "type": "portfolio",
+        "created": "2018-04-04T13:56:04-04:00",
+        "changed": "2019-05-21T09:57:17-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "167"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558447037"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/graphic-design/news-pop-full-mock-upphp-app",
+                "pid": "25",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span>Full mockup for PHP-based news feed application. Designed in Adobe Illustrator. Built front-end from scratch in responsive, HTML5 code to match mock-up.</span></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "5",
+                "alt": "Front-end Mock-up",
+                "title": "",
+                "width": "1024",
+                "height": "700",
+                "url": "/sites/default/files/2018-04/newsPopMock-up.png",
+                "filename": "newsPopMock-up.png",
+                "filesize": "82374",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": [
+                {
+                    "target_id": "4",
+                    "term_name": "Graphic Design",
+                    "term_vocabulary": "portfolio_category"
+                },
+                {
+                    "target_id": "3",
+                    "term_name": "Other Websites & Applications",
+                    "term_vocabulary": "portfolio_category"
+                }
+            ],
+            "field_short_description": {
+                "value": "News Pop Full Mock-up/PHP app",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "mockup"
+            }
+        }
+    },
+    {
+        "id": "4",
+        "uuid": "8e0cdf93-40b4-4f4f-a0cb-ef23b7b92f1d",
+        "title": "Responsive Blueprint",
+        "type": "portfolio",
+        "created": "2018-04-04T14:01:12-04:00",
+        "changed": "2018-07-09T11:06:33-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "131"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1531148793"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/other-websites-applications/responsive-blueprint",
+                "pid": "26",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<h3>You can view/clone this project on GitHub:&nbsp; <a href=\"https://github.com/kdomenick/responsive-html5-template\">https://github.com/kdomenick/responsive-html5-template</a></h3>\r\n\r\n<p>Template web application to be used as a starter kit for future projects and a training tool to teach responsive web design to other developers. &nbsp;</p>\r\n\r\n<p>NOTE: &nbsp;All graphics in this project are<span>&nbsp;</span><strong>not</strong><span>&nbsp;</span>my property and were definitely<span>&nbsp;</span><strong>not</strong><span>&nbsp;</span>used with permission. &nbsp;They serve as placeholders only, to demonstrate regions, and are not re-purposed or resold. &nbsp;This project should be used for training purposes or to quickly get started with responsive HTML5.&nbsp; If cloning, please replace all graphics marked as \"replace with your own...\"</p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "6",
+                "alt": "Custom responsive template",
+                "title": "",
+                "width": "1260",
+                "height": "963",
+                "url": "/sites/default/files/2018-04/ResponsiveBlueprint.png",
+                "filename": "ResponsiveBlueprint.png",
+                "filesize": "131661",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "3",
+                "term_name": "Other Websites & Applications",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Custom Responsive Template & Training Tool",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "5",
+        "uuid": "2779ab68-b1e8-4aa6-8160-bc382a4821e6",
+        "title": "Healthcare Website",
+        "type": "portfolio",
+        "created": "2018-04-04T14:03:32-04:00",
+        "changed": "2019-05-22T10:43:53-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "181"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558536233"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/healthcare-website",
+                "pid": "27",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Live Drupal 7 website, responsive HTML5 template. Page layouts, custom module development, custom CSS, some graphic design. Drupal system and server administrator.</p>\r\n\r\n<p><strong>Highlights:</strong><span>&nbsp;</span>&nbsp;Drupal Commerce for donations, Geo Location proximity searching, fully custom e-Card module, feeds and integration to multiple other systems, advanced Views, full HTTPS site.</p>\r\n\r\n<p><span>URL:<span>&nbsp;</span><a href=\"https://www.summithealth.org/\">www.summithealth.org</a>&nbsp;</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "field_gallery": [
+                {
+                    "target_id": "78",
+                    "alt": "Front",
+                    "title": "",
+                    "width": "1400",
+                    "height": "1163",
+                    "url": "/sites/default/files/2019-05/front.PNG",
+                    "filename": "front.PNG",
+                    "filesize": "445723",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "73",
+                    "alt": "Careers page",
+                    "title": "",
+                    "width": "1164",
+                    "height": "1152",
+                    "url": "/sites/default/files/2019-05/careers.PNG",
+                    "filename": "careers.PNG",
+                    "filesize": "966595",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "74",
+                    "alt": "Donations page",
+                    "title": "",
+                    "width": "1306",
+                    "height": "1292",
+                    "url": "/sites/default/files/2019-05/donations.PNG",
+                    "filename": "donations.PNG",
+                    "filesize": "282456",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "75",
+                    "alt": "Electronic cards",
+                    "title": "",
+                    "width": "1213",
+                    "height": "1332",
+                    "url": "/sites/default/files/2019-05/ecard.PNG",
+                    "filename": "ecard.PNG",
+                    "filesize": "421071",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "76",
+                    "alt": "Locations",
+                    "title": "",
+                    "width": "1267",
+                    "height": "1252",
+                    "url": "/sites/default/files/2019-05/locations.PNG",
+                    "filename": "locations.PNG",
+                    "filesize": "120824",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "77",
+                    "alt": "Providers",
+                    "title": "",
+                    "width": "1270",
+                    "height": "1227",
+                    "url": "/sites/default/files/2019-05/provider.PNG",
+                    "filename": "provider.PNG",
+                    "filesize": "249500",
+                    "mimetype": "image/png"
+                }
+            ],
+            "field_image": {
+                "target_id": "7",
+                "alt": "Healthcare website",
+                "title": "",
+                "width": "1038",
+                "height": "760",
+                "url": "/sites/default/files/2018-04/SummitHealthFrontPage.png",
+                "filename": "SummitHealthFrontPage.png",
+                "filesize": "343013",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Live Drupal 7 Site",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livepublic"
+            }
+        }
+    },
+    {
+        "id": "6",
+        "uuid": "39e1fbdb-f942-4aa5-b0af-a429e86e920a",
+        "title": "Urgent Care Website",
+        "type": "portfolio",
+        "created": "2018-04-04T14:05:53-04:00",
+        "changed": "2019-05-22T11:09:39-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "186"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558537779"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/urgent-care-website",
+                "pid": "28",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Live Drupal 7 website. &nbsp;Responsive, Bootstrap, HTML5 template.&nbsp; Premium theme and premium layout builder modules.&nbsp;</p>\r\n\r\n<p><strong>Highlights:</strong><span>&nbsp;</span>&nbsp;Modern theme with big, bold graphics and animation.&nbsp;</p>\r\n\r\n<p>My role:&nbsp;Page layouts, custom module development, custom CSS, some graphic design, feed imports and integration to external systems.&nbsp; Drupal system and server administrator.</p>\r\n\r\n<p>URL: &nbsp;<a href=\"https://www.onthegocare.com/\">www.onthegocare.com</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "field_gallery": [
+                {
+                    "target_id": "85",
+                    "alt": "Front page",
+                    "title": "",
+                    "width": "1348",
+                    "height": "1197",
+                    "url": "/sites/default/files/2019-05/front_1.PNG",
+                    "filename": "front_1.PNG",
+                    "filesize": "782501",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "86",
+                    "alt": "About page",
+                    "title": "",
+                    "width": "1348",
+                    "height": "1184",
+                    "url": "/sites/default/files/2019-05/about.PNG",
+                    "filename": "about.PNG",
+                    "filesize": "189629",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "87",
+                    "alt": "Locations page",
+                    "title": "",
+                    "width": "1365",
+                    "height": "1030",
+                    "url": "/sites/default/files/2019-05/locations_0.PNG",
+                    "filename": "locations_0.PNG",
+                    "filesize": "175752",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "88",
+                    "alt": "Services page",
+                    "title": "",
+                    "width": "1343",
+                    "height": "1193",
+                    "url": "/sites/default/files/2019-05/services_0.PNG",
+                    "filename": "services_0.PNG",
+                    "filesize": "520971",
+                    "mimetype": "image/png"
+                }
+            ],
+            "field_image": {
+                "target_id": "9",
+                "alt": "Urgent Care Website",
+                "title": "",
+                "width": "1140",
+                "height": "927",
+                "url": "/sites/default/files/2018-04/OTGC.png",
+                "filename": "OTGC.png",
+                "filesize": "882139",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Live Drupal 7 Site",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livepublic"
+            }
+        }
+    },
+    {
+        "id": "7",
+        "uuid": "90eb21f1-32ad-4168-b544-af49907d059c",
+        "title": "Healthcare Mobile App",
+        "type": "portfolio",
+        "created": "2018-04-04T14:07:33-04:00",
+        "changed": "2019-05-21T11:24:56-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "176"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558452296"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/other-websites-applications/healthcare-mobile-app",
+                "pid": "29",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Designed and created live mobile app (available in Android Play and Apple Store) using a platform/CMS solution. &nbsp;Some custom Android development using Android Studio. &nbsp;Custom XML, RSS, REST/JSON feeds. &nbsp;All graphics, layout, and design. &nbsp;&nbsp;</p>\r\n\r\n<p><strong>Highlights: &nbsp;</strong>Complex integration to clinical systems using XML and RSS, some of which is generated through Drupal Views.</p>\r\n\r\n<p>URLs:<span>&nbsp;</span><a href=\"https://geo.itunes.apple.com/us/app/summit-health/id1043126493?mt=8\">Apple App Store</a>&nbsp; &nbsp;<a href=\"https://play.google.com/store/apps/details?id=com.soln.SBE42F836F12A3ABEA5A061A394404E5A\">Google Play</a></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "10",
+                "alt": "Healthcare mobile app",
+                "title": "",
+                "width": "544",
+                "height": "828",
+                "url": "/sites/default/files/2018-04/Mobile.png",
+                "filename": "Mobile.png",
+                "filesize": "219601",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "3",
+                "term_name": "Other Websites & Applications",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Mobile app for Android and iOS",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livepublic"
+            }
+        }
+    },
+    {
+        "id": "8",
+        "uuid": "becb03d5-e1e8-4367-b2e8-18de4db2c9ec",
+        "title": "Custom Front-end for Sharepoint",
+        "type": "portfolio",
+        "created": "2018-04-04T14:08:57-04:00",
+        "changed": "2019-05-21T09:57:40-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "168"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558447060"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/other-websites-applications/custom-front-end-sharepoint",
+                "pid": "30",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span>Custom designed layout, including all HTML and CSS, and some graphics.&nbsp; Integration to Sharepoint through ASP and CAML queries to dymanically pull data from Sharepoint lists and display in front page.&nbsp;</span></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "11",
+                "alt": "Custom Sharepoint Front-end",
+                "title": "",
+                "width": "1260",
+                "height": "937",
+                "url": "/sites/default/files/2018-04/SummitNow.PNG",
+                "filename": "SummitNow.PNG",
+                "filesize": "244779",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": [
+                {
+                    "target_id": "3",
+                    "term_name": "Other Websites & Applications",
+                    "term_vocabulary": "portfolio_category"
+                },
+                {
+                    "target_id": "4",
+                    "term_name": "Graphic Design",
+                    "term_vocabulary": "portfolio_category"
+                }
+            ],
+            "field_short_description": {
+                "value": "Custom Front-end for Sharepoint",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livefire"
+            }
+        }
+    },
+    {
+        "id": "9",
+        "uuid": "23a97d58-9910-4cab-86a5-c3d84797ac92",
+        "title": "Plastic Surgery Website",
+        "type": "portfolio",
+        "created": "2018-04-04T14:13:19-04:00",
+        "changed": "2019-05-21T09:59:58-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "174"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558447198"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/plastic-surgery-website",
+                "pid": "31",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Now-retired Drupal 7 website. &nbsp;Responsive, HTML5 design. &nbsp;Highly customized theme. &nbsp;Some layout and graphic design. &nbsp;Drupal site and server administration.</p>\r\n\r\n<p><strong>Highlights:</strong>&nbsp; This \"micro-site\" was created within a parent Drupal site by utilizing the Content Theme module to re-theme particular content types, creating what appears to be a separate website with its own look and feel. &nbsp;Lots of custom CSS.&nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "12",
+                "alt": "Plastic Surgery Website",
+                "title": "",
+                "width": "1140",
+                "height": "927",
+                "url": "/sites/default/files/2018-04/Plastics.png",
+                "filename": "Plastics.png",
+                "filesize": "431956",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Retired Drupal 7 Site",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "retired"
+            }
+        }
+    },
+    {
+        "id": "10",
+        "uuid": "01104b39-5c0a-4cb5-a4a1-1c1e5eb27841",
+        "title": "Cloud Document Sharing Solution",
+        "type": "portfolio",
+        "created": "2018-04-04T14:15:15-04:00",
+        "changed": "2019-05-21T11:24:43-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "175"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558452283"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/cloud-document-sharing-solution",
+                "pid": "32",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Now-retired Drupal 7 website. &nbsp;Responsive, Bootstrap, HTML5 template. &nbsp;Online document sharing solution provided by both contrib and custom modules. &nbsp;Custom CSS, theming. &nbsp;Drupal site and server administrator.&nbsp;</p>\r\n\r\n<p><strong>Highlights:</strong><span>&nbsp;</span>&nbsp;Complex levels of security using the Organic Groups module along with the Core role functionality to provide a <span><span><span><span>hierarchy </span></span></span></span>of distributed user management. &nbsp;Document sharing module, FileDepot, provides the ability to share and version documents with other online contributors.</p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "13",
+                "alt": "Document Sharing Website",
+                "title": "",
+                "width": "1140",
+                "height": "927",
+                "url": "/sites/default/files/2018-04/Cloud.png",
+                "filename": "Cloud.png",
+                "filesize": "648232",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Retired Drupal 7 Site",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "retired"
+            }
+        }
+    },
+    {
+        "id": "11",
+        "uuid": "7184914c-f9c9-4645-bb8a-4f625fc39054",
+        "title": "Orientation Website",
+        "type": "portfolio",
+        "created": "2018-04-04T14:17:45-04:00",
+        "changed": "2019-05-21T09:59:39-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "173"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558447179"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/orientation-website",
+                "pid": "33",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span>Now-retired Drupal 7 website. &nbsp;Responsive HTML5 template. Custom CSS, some graphic design. Drupal system and server administrator. &nbsp;</span></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "14",
+                "alt": "Orientation Website",
+                "title": "",
+                "width": "1089",
+                "height": "723",
+                "url": "/sites/default/files/2018-04/SHorient.png",
+                "filename": "SHorient.png",
+                "filesize": "275834",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Retired Drupal 7 Site",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "retired"
+            }
+        }
+    },
+    {
+        "id": "12",
+        "uuid": "40ba2586-8aed-4325-82d9-366dad6bf79f",
+        "title": "Plastic Surgery Website",
+        "type": "portfolio",
+        "created": "2018-04-04T14:19:09-04:00",
+        "changed": "2019-05-22T10:54:27-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "184"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558536867"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/plastic-surgery-website-0",
+                "pid": "34",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Live Drupal 7 website. &nbsp;Responsive, HTML5 design. &nbsp;Customized premium theme and premium layout builder modules.&nbsp;</p>\r\n\r\n<p><strong>Highlights:</strong>&nbsp;&nbsp;Modern theme with big, bold graphics and animation.&nbsp;</p>\r\n\r\n<p>My role:&nbsp; Site building, theming, some layout and graphic design, Drupal site and server administration.</p>\r\n\r\n<p><span>URL:</span><span>&nbsp;</span><a href=\"https://www.summithealth.org/plastics\">https://www.summithealth.org/plastics</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "field_gallery": [
+                {
+                    "target_id": "82",
+                    "alt": "Front page",
+                    "title": "",
+                    "width": "1347",
+                    "height": "1186",
+                    "url": "/sites/default/files/2019-05/front_0.PNG",
+                    "filename": "front_0.PNG",
+                    "filesize": "867589",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "83",
+                    "alt": "Contact page",
+                    "title": "",
+                    "width": "1352",
+                    "height": "1191",
+                    "url": "/sites/default/files/2019-05/contact.PNG",
+                    "filename": "contact.PNG",
+                    "filesize": "84798",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "84",
+                    "alt": "Services page",
+                    "title": "",
+                    "width": "1346",
+                    "height": "1190",
+                    "url": "/sites/default/files/2019-05/services.PNG",
+                    "filename": "services.PNG",
+                    "filesize": "394380",
+                    "mimetype": "image/png"
+                }
+            ],
+            "field_image": {
+                "target_id": "15",
+                "alt": "Plastic Surgery Website",
+                "title": "",
+                "width": "989",
+                "height": "989",
+                "url": "/sites/default/files/2018-04/Plastics2.png",
+                "filename": "Plastics2.png",
+                "filesize": "875989",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Live Drupal 7 Site",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livepublic"
+            }
+        }
+    },
+    {
+        "id": "25",
+        "uuid": "fbe40862-a8c1-4e8c-a736-73c90458ca16",
+        "title": "Design on the Edge Promo",
+        "type": "portfolio",
+        "created": "2018-04-16T13:55:53-04:00",
+        "changed": "2018-04-16T13:57:24-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "36"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1523901444"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/graphic-design/design-edge-promo",
+                "pid": "35",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span>Promotional banner for a seminar on server virtualization.</span></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "31",
+                "alt": "graphic promo",
+                "title": "",
+                "width": "500",
+                "height": "500",
+                "url": "/sites/default/files/2018-04/Promo-3dGrid.png",
+                "filename": "Promo-3dGrid.png",
+                "filesize": "98643",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "4",
+                "term_name": "Graphic Design",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Design on the Edge Promo",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "26",
+        "uuid": "a0712bfb-dc96-4757-805a-fe97ab283106",
+        "title": "Vintage Bathroom",
+        "type": "portfolio",
+        "created": "2018-04-16T16:05:57-04:00",
+        "changed": "2018-05-02T11:25:42-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "101"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525274742"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/interiors/vintage-bathroom",
+                "pid": "36",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<div class=\"content-positive plugin-content\" id=\"content-positive\">\r\n<div class=\"container\">\r\n<div class=\"row text-center top-header\">\r\n<h2 class=\"title block-title\">YELLOW TAKES THE STAGE</h2>\r\n</div>\r\n\r\n<div class=\"block-content\">\r\n<div class=\"row intro-text text-center\">\r\n<div class=\"col-xs-12 padding-btm-199\">This 1960's bathroom had original lemon-yellow sinks that needed to be replaced - unless, of course, they became a focal point.</div>\r\n\r\n<div class=\"col-xs-12 padding-btm-199\">The sinks were in surprisingly good shape. So, rather than replacing them, I saved some money by replacing the faucets only, refinishing the cabinetry, and focusing on the yellow instead of trying to hide it.</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<p><img alt=\"bathroom picture\" src=\"/sites/default/files/design/vintagebath2.png\" /> <img alt=\"bathroom picture\" src=\"/sites/default/files/design/vintagebath4.png\" /> <img alt=\"bathroom picture\" src=\"/sites/default/files/design/vintagebath5.png\" /> <img alt=\"bathroom picture\" src=\"/sites/default/files/design/vintagebath6.png\" /></p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "32",
+                "alt": "vintage bathroom",
+                "title": "",
+                "width": "317",
+                "height": "431",
+                "url": "/sites/default/files/2018-04/vintagebathicon.png",
+                "filename": "vintagebathicon.png",
+                "filesize": "255428",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "13",
+                "term_name": "Interiors",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Vintage bathroom",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "28",
+        "uuid": "f4681b2b-72f3-4f7c-b22f-b428adff8b50",
+        "title": "Knowledge Base/Wiki-Style Website",
+        "type": "portfolio",
+        "created": "2018-04-24T14:37:19-04:00",
+        "changed": "2019-05-21T09:58:59-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "171"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1558447139"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/knowledge-basewiki-style-website",
+                "pid": "37",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Drupal 7 website designed for knowledge sharing, articles, and documentation on technical topics.&nbsp; Content filtering based on role.&nbsp; Site is internal to the organization (not available on the web).</p>\r\n\r\n<p><strong>Highlights</strong>: Integration to MS Active Directory though the LDAP module.</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "34",
+                "alt": "website screen shot",
+                "title": "",
+                "width": "1308",
+                "height": "920",
+                "url": "/sites/default/files/2018-04/ISKnow.PNG",
+                "filename": "ISKnow.PNG",
+                "filesize": "227547",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Knowledge Base/Wiki-Style Website",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livefire"
+            }
+        }
+    },
+    {
+        "id": "30",
+        "uuid": "cb4b1588-fc60-4a6c-82e1-afa481f865c8",
+        "title": "Bridal Necklace",
+        "type": "portfolio",
+        "created": "2018-04-26T09:35:43-04:00",
+        "changed": "2018-04-26T09:54:36-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "68"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1524750876"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/non-digital-creations/bridal-necklace",
+                "pid": "38",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I created this Bridesmaid's necklace for a wedding with an interesting color combination: red and turquoise.&nbsp;</p>\r\n\r\n<p>The pendant is real turquoise mineral, and the beads are stone, glass and sterling silver.&nbsp;</p>\r\n\r\n<p><img alt=\"full size red and turquiose necklace\" data-entity-type=\"file\" data-entity-uuid=\"4025835b-0b49-4d6c-afb8-aee2b42a77b6\" src=\"/sites/default/files/inline-images/TurquoiseNecklace.jpg\" /></p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "38",
+                "alt": "red and turquoise necklace pic",
+                "title": "",
+                "width": "500",
+                "height": "593",
+                "url": "/sites/default/files/2018-04/TurquoiseNecklace-Small.jpg",
+                "filename": "TurquoiseNecklace-Small.jpg",
+                "filesize": "311391",
+                "mimetype": "image/jpeg"
+            },
+            "field_portfolio_category": {
+                "target_id": "2",
+                "term_name": "Non-digital Creations",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Bridal Necklace",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "33",
+        "uuid": "886c278e-c303-4829-a74a-bd5e93f6e9ca",
+        "title": "Getaway Spare Bedroom",
+        "type": "portfolio",
+        "created": "2018-04-27T15:38:47-04:00",
+        "changed": "2018-05-02T11:25:13-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "100"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525274713"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/interiors/getaway-spare-bedroom",
+                "pid": "39",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>This bedroom had a problem that many older homes suffer from: paneling.&nbsp; Old, brown, plastic-like paneling and matching trim.&nbsp; Ideally, one would remove paneling and replace it with drywall, but in a pinch, it can also be painted.&nbsp; Painting both the paneling and trim in a warm white color saved time and money, and gave the room a naturally \"beachy\" feel.&nbsp; So, continuing on that line, I added accessories in green and blue.&nbsp; I used seashell stencils and chalk paint to create coordinating wall hangings with some old picture frames I painted white.&nbsp; The only purchases in this room were the twin bed and linens.&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/GetawayBedroom.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/GetawayBedroom2.png\" /></p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "41",
+                "alt": "bedroom decor",
+                "title": "",
+                "width": "438",
+                "height": "350",
+                "url": "/sites/default/files/2018-04/GetawayBedroomSmall_0.png",
+                "filename": "GetawayBedroomSmall.png",
+                "filesize": "205552",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "13",
+                "term_name": "Interiors",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Getaway Spare Bedroom",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "35",
+        "uuid": "7b5270ad-0a15-4658-ade2-3ba4863670e3",
+        "title": "Family Room and Home Office Combo",
+        "type": "portfolio",
+        "created": "2018-05-02T10:27:25-04:00",
+        "changed": "2018-05-02T11:48:45-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "104"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525276125"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/interiors/family-room-and-home-office-combo",
+                "pid": "40",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>This extra-large room boasts five windows, a outside entry, and a floor-to-ceiling natural stone fireplace.&nbsp; It spans the width of the house, and on the back side, it gets only indirect morning sun.&nbsp; With the help of mature trees and neighboring houses, what would be hot afternoon sun on the western side is filtered enough to make this room a cool and serene space.&nbsp; Because of its size, the room is multi-functional as both a family room and a home office.&nbsp; It's also incredibly difficult to photograph without professional help (as you'll see from the photos).&nbsp;&nbsp;</p>\r\n\r\n<p>The fireplace paired with original oak flooring feels cold and hard by itself but is softened by some greenery,&nbsp;lighter-colored decor and an oversized sectional in the adjacent corner.&nbsp;&nbsp;</p>\r\n\r\n<p>The home office is simple, with an understated desk and single, black shelf.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/HomeOffice1.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/HomeOffice5.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/HomeOffice2.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/HomeOffice3.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/HomeOffice4.png\" /></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "44",
+                "alt": "fireplace photo",
+                "title": "",
+                "width": "219",
+                "height": "190",
+                "url": "/sites/default/files/2018-05/HomeOfficeSm.png",
+                "filename": "HomeOfficeSm.png",
+                "filesize": "87690",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "13",
+                "term_name": "Interiors",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Family Room and Home Office Combo",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "36",
+        "uuid": "e55d5d9b-9933-4484-9ebe-e13075d69279",
+        "title": "Sunflower Painting",
+        "type": "portfolio",
+        "created": "2018-05-02T11:17:38-04:00",
+        "changed": "2018-05-02T11:24:10-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "99"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525274650"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/art/sunflower-painting",
+                "pid": "41",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>This sunflower was inspired by an image I saw online.&nbsp; I'm not a fantastic painter, but I'm quite happy with the result.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/Flower1.png\"></p>\r\n<p><img src=\"/sites/default/files/design/Flower2.png\"></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "45",
+                "alt": "flower painting",
+                "title": "",
+                "width": "177",
+                "height": "175",
+                "url": "/sites/default/files/2018-05/FlowerSm.png",
+                "filename": "FlowerSm.png",
+                "filesize": "65920",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "14",
+                "term_name": "Art",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Sunflower Painting",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "37",
+        "uuid": "564bc329-20f4-4f9a-af40-ad5be137ffab",
+        "title": "Rooster Painting",
+        "type": "portfolio",
+        "created": "2018-05-02T11:26:04-04:00",
+        "changed": "2018-05-02T11:29:36-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "102"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525274976"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/art/rooster-painting",
+                "pid": "42",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>This rooster was created in a paint-nite style workshop with an instructor.&nbsp; I've been to tons of instructor-led painting classes, and this was, by far, my favorite.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/Rooster1.png\"></p>\r\n<p><img src=\"/sites/default/files/design/Rooster2.png\"></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "46",
+                "alt": "rooster painting",
+                "title": "",
+                "width": "224",
+                "height": "217",
+                "url": "/sites/default/files/2018-05/RoosterSm.png",
+                "filename": "RoosterSm.png",
+                "filesize": "99905",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "14",
+                "term_name": "Art",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Rooster Painting",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "38",
+        "uuid": "b625d42d-3c8d-409e-9c86-5d5eb8360f1d",
+        "title": "Beachy Flowerpots",
+        "type": "portfolio",
+        "created": "2018-05-02T11:40:24-04:00",
+        "changed": "2018-05-02T11:44:19-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "103"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525275859"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/non-digital-creations/beachy-flowerpots",
+                "pid": "43",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Old clay flowerpots got a makeover with some tile mortar and seashells.&nbsp;&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/Plants1.png\"></p>\r\n<p><img src=\"/sites/default/files/design/Plants2.png\"></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "47",
+                "alt": "seashell covered flowerpots",
+                "title": "",
+                "width": "380",
+                "height": "253",
+                "url": "/sites/default/files/2018-05/PlantsSm.png",
+                "filename": "PlantsSm.png",
+                "filesize": "210239",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "2",
+                "term_name": "Non-digital Creations",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Beachy Flowerpots",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "39",
+        "uuid": "df10bcdb-e133-4679-8c04-fc9a07c4957d",
+        "title": "Peaceful Bathroom",
+        "type": "portfolio",
+        "created": "2018-05-02T11:59:31-04:00",
+        "changed": "2018-05-02T12:10:40-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "106"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525277440"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/interiors/peaceful-bathroom",
+                "pid": "44",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Even though I'm a shower person, and I've often considered gutting this bathroom and removing the oversized jet tub, it's cheaper to simply decorate the tub area with peaceful, relaxing accessories.&nbsp;&nbsp;</p>\r\n\r\n<p>The WASH, SOAK, and RELAX signs were inspired by elaborately staged bathrooms on&nbsp;Pinterest, but mine were made with wine corks, some old cedar planks I found in the basement, and a glue gun.&nbsp; The vintage ceramic pitcher was a yard sale find, and the bronze-y accessories I've collected over the years and decided to bring them together in this space.</p>\r\n\r\n<p><img src=\"/sites/default/files/design/PeacefulBath1.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/PeacefulBath2.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/PeacefulBath3.png\" /></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "48",
+                "alt": "peaceful bathroom shelf",
+                "title": "",
+                "width": "271",
+                "height": "181",
+                "url": "/sites/default/files/2018-05/PeacefulBathSm.png",
+                "filename": "PeacefulBathSm.png",
+                "filesize": "95998",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "13",
+                "term_name": "Interiors",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Peaceful Bathroom",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "40",
+        "uuid": "4b45a698-22d7-4732-9386-88409a0ce62d",
+        "title": "Front Closure Necklace",
+        "type": "portfolio",
+        "created": "2018-05-09T12:27:37-04:00",
+        "changed": "2018-05-09T12:33:00-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "113"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525883580"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/non-digital-creations/front-closure-necklace",
+                "pid": "49",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I love shades of green and grey together, so this is one of my favorite pieces.&nbsp; It has a toggle clasp closure with a cool square pendant.&nbsp; The beads are glass, acrylic, and stone with sterling silver accents.&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/FrontClosureNecklace1.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/FrontClosureNecklace1.png\" /></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "49",
+                "alt": "front closure necklace pic",
+                "title": "",
+                "width": "271",
+                "height": "223",
+                "url": "/sites/default/files/2018-05/FrontClosureNecklaceSm.png",
+                "filename": "FrontClosureNecklaceSm.png",
+                "filesize": "124295",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "2",
+                "term_name": "Non-digital Creations",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Front Closure Necklace",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "41",
+        "uuid": "c4867d52-02de-4439-8ec0-389e53edf486",
+        "title": "Multi-strand Leather Bracelet",
+        "type": "portfolio",
+        "created": "2018-05-09T12:33:37-04:00",
+        "changed": "2018-05-09T12:41:09-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "114"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525884069"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/non-digital-creations/multi-strand-leather-bracelet",
+                "pid": "50",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>This bracelet was created with multiple strands of grey leather attached to findings with wrapped silver wire.&nbsp; Each strand has a different pattern of grommet, tube, and sterling silver beads.&nbsp; The extra-large lobster clasp makes it easy to put on and take off with one hand.&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/LeatherBracelet.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/LeatherBracelet2.png\" /></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "50",
+                "alt": "Multi-strand Leather Bracelet pic",
+                "title": "",
+                "width": "301",
+                "height": "196",
+                "url": "/sites/default/files/2018-05/LeatherBraceletSm.png",
+                "filename": "LeatherBraceletSm.png",
+                "filesize": "142527",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "2",
+                "term_name": "Non-digital Creations",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Multi-strand Leather Bracelet",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "42",
+        "uuid": "ddf24ea4-a13b-4636-8956-5535da386cbc",
+        "title": "Stretch Bracelets",
+        "type": "portfolio",
+        "created": "2018-05-09T12:41:30-04:00",
+        "changed": "2018-05-09T12:48:59-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "115"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525884539"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/non-digital-creations/stretch-bracelets",
+                "pid": "51",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Stretch bracelets are super comfortable and easy to make.&nbsp; In fact, some of my first jewelry creations were simple stretch bracelets like these.</p>\r\n\r\n<p>For this project, I was inspired by the <a href=\"https://www.kinsleyarmelle.com/collections/bracelets\">Kinsley Armelle</a> collection and decided to try my own version.&nbsp; I used charcoal-colored stone bead with gold-plated accents, and I stole open-work tube beads from some broken Silpada bracelets to complete the look.&nbsp;</p>\r\n\r\n<p><img src=\"/sites/default/files/design/StretchBracelet1.png\" /></p>\r\n\r\n<p><img src=\"/sites/default/files/design/StretchBracelet2.png\" /></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "51",
+                "alt": "stretch bracelet pic",
+                "title": "",
+                "width": "221",
+                "height": "179",
+                "url": "/sites/default/files/2018-05/Sm.png",
+                "filename": "Sm.png",
+                "filesize": "92458",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "2",
+                "term_name": "Non-digital Creations",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Stretch Bracelets",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "43",
+        "uuid": "20f075fa-abd9-4437-9ea2-2775bf0ea39c",
+        "title": "Special Occasion Necklace",
+        "type": "portfolio",
+        "created": "2018-05-09T12:49:56-04:00",
+        "changed": "2018-05-09T12:55:23-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "116"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525884923"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/non-digital-creations/special-occasion-necklace",
+                "pid": "52",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>The most time-consuming and complex piece I've created so far, this necklace is fit for a black tie affair.</p>\r\n\r\n<p>Pearls in multiple sizes and shapes, Czech glass, and dainty sterling silver chain come together with wire-wrapping hidden under special, oversized end caps.&nbsp; It closes at the back with a sterling silver toggle clasp.</p>\r\n\r\n<p><img src=\"/sites/default/files/design/SpecialOccasionNecklace1.png\" /></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "52",
+                "alt": "special occasion necklace pic",
+                "title": "",
+                "width": "228",
+                "height": "224",
+                "url": "/sites/default/files/2018-05/SpecialOccasionNecklaceSm.png",
+                "filename": "SpecialOccasionNecklaceSm.png",
+                "filesize": "120680",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "2",
+                "term_name": "Non-digital Creations",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Special Occasion Necklace",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "44",
+        "uuid": "17b89822-b3a0-4eb0-afcf-92ed7af37dff",
+        "title": "Woven Bracelet",
+        "type": "portfolio",
+        "created": "2018-05-09T12:56:11-04:00",
+        "changed": "2018-05-09T13:02:54-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "117"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525885374"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/non-digital-creations/woven-bracelet",
+                "pid": "53",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Woven bracelets tend to be very intricate and give the impression of a high level of difficulty.&nbsp; But with the right pattern and instruction (and a bit of patience at the beginning), they are very doable.</p>\r\n\r\n<p>I created this bracelet in an instructor-led class held at a local bead store.&nbsp; It did take some time - about 2 hours - to complete, but the end result is a bracelet that gets a lot of attention and compliments.&nbsp; I've since made several other bracelets in different colors using the same pattern.&nbsp;</p>\r\n\r\n<p>The beads are two shades of olive green with gold seed bead accents and a brass closure.</p>\r\n\r\n<p><img src=\"/sites/default/files/design/WovenBracelet1.png\" /></p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "53",
+                "alt": "woven bracelet pic",
+                "title": "",
+                "width": "299",
+                "height": "221",
+                "url": "/sites/default/files/2018-05/WovenBraceletSm.png",
+                "filename": "WovenBraceletSm.png",
+                "filesize": "150633",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "2",
+                "term_name": "Non-digital Creations",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Woven Bracelet",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    },
+    {
+        "id": "49",
+        "uuid": "985957d4-993b-4d12-b1b6-0b4cff032896",
+        "title": "Time Off Management System",
+        "type": "portfolio",
+        "created": "2019-01-31T09:18:48-05:00",
+        "changed": "2019-08-02T14:53:34-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "222"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564772014"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/time-management-system",
+                "pid": "69",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>&nbsp;</p>\r\n\r\n<p><strong>This application has been submitted as a Case Study in the Drupal.org Community Showcase!</strong>&nbsp;&nbsp;<br />\r\n<a href=\"https://www.drupal.org/case-study/time-off-management-system\">See the Case Study here.</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Live Drupal 8 application.&nbsp; Custom Bootstrap-based administrative theme.&nbsp; Site building and design, custom module development, Views Plugin development, Twig theming, feed imports and integration to other systems.</p>\r\n\r\n<p><strong>Highlights:&nbsp; </strong>Fully-customized administrative theme, 2000+ user accounts, advanced Views development, custom entities, jQuery and Javascript front-end scripting.&nbsp; This solution replaced <em>40 separate Java applications </em>and streamlined the Time Off request process for this healthcare provider by simplifying and standardizing an overly-complex app.</p>\r\n\r\n<p>URL: not available (behind a firewall)</p>\r\n\r\n<p>My role:&nbsp; project technical lead, themer, site builder, some module development, database admin, Drupal and server admin.</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n",
+                "summary": "Drupal 8 application for managing benefit time requests in a unionized healthcare environment",
+                "format": "full_html"
+            },
+            "field_gallery": [
+                {
+                    "target_id": "79",
+                    "alt": "Time Off Manager screen",
+                    "title": "",
+                    "width": "1417",
+                    "height": "982",
+                    "url": "/sites/default/files/2019-05/Time_Off_Managers.PNG",
+                    "filename": "Time_Off_Managers.PNG",
+                    "filesize": "70262",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "80",
+                    "alt": "Time Off User screen",
+                    "title": "",
+                    "width": "1606",
+                    "height": "864",
+                    "url": "/sites/default/files/2019-05/Time_Off_Users.PNG",
+                    "filename": "Time_Off_Users.PNG",
+                    "filesize": "78101",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "81",
+                    "alt": "Time Off request",
+                    "title": "",
+                    "width": "1664",
+                    "height": "1072",
+                    "url": "/sites/default/files/2019-05/time_off_request.PNG",
+                    "filename": "time_off_request.PNG",
+                    "filesize": "96048",
+                    "mimetype": "image/png"
+                }
+            ],
+            "field_image": {
+                "target_id": "62",
+                "alt": "Time Off management system",
+                "title": "",
+                "width": "1251",
+                "height": "866",
+                "url": "/sites/default/files/2019-01/time_off_front.PNG",
+                "filename": "time_off_front.PNG",
+                "filesize": "68036",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Submitted for Case Study in Drupal.org Community Showcase!",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livefire"
+            }
+        }
+    },
+    {
+        "id": "52",
+        "uuid": "7375ca08-ae6b-42a7-b6e9-80f924cff497",
+        "title": "Red Brick Manor Wines",
+        "type": "portfolio",
+        "created": "2019-05-30T16:16:41-04:00",
+        "changed": "2021-11-11T15:56:25-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "297"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1636664185"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/drupal-sites/red-brick-manor-wines",
+                "pid": "72",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<h3>Recently converted from Drupal 8 to a decoupled Gatsby/React site with headless Dato CMS.&nbsp; Redesign in progress.</h3>\r\n\r\n<h3>&nbsp;</h3>\r\n\r\n<p>A live hobbyist website for DIY wine makers.&nbsp; Features recipes, photographs, and a wine blog.</p>\r\n\r\n<p><strong>Highlights:&nbsp;&nbsp;</strong>Parallax theme, bold graphics and colors</p>\r\n\r\n<p>URL: <a href=\"https://www.redbrickmanorwines.com\">www.redbrickmanorwines.com</a></p>\r\n\r\n<p>My role:&nbsp; themer, site builder, database admin, conversion specialist.</p>\r\n",
+                "summary": "A live hobbyist website for DIY wine makers.  Recently converted to decoupled Gatsby/Dato CMS.",
+                "format": "full_html"
+            },
+            "field_gallery": [
+                {
+                    "target_id": "90",
+                    "alt": "wine blog",
+                    "title": "",
+                    "width": "1094",
+                    "height": "873",
+                    "url": "/sites/default/files/2019-05/Blog.PNG",
+                    "filename": "Blog.PNG",
+                    "filesize": "717347",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "91",
+                    "alt": "home page blocks",
+                    "title": "",
+                    "width": "1668",
+                    "height": "875",
+                    "url": "/sites/default/files/2019-05/home.PNG",
+                    "filename": "home.PNG",
+                    "filesize": "2901793",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "92",
+                    "alt": "wine recipes",
+                    "title": "",
+                    "width": "1103",
+                    "height": "560",
+                    "url": "/sites/default/files/2019-05/Recipes.PNG",
+                    "filename": "Recipes.PNG",
+                    "filesize": "509712",
+                    "mimetype": "image/png"
+                },
+                {
+                    "target_id": "93",
+                    "alt": "home page blocks",
+                    "title": "",
+                    "width": "917",
+                    "height": "551",
+                    "url": "/sites/default/files/2019-05/Whatsbottled.PNG",
+                    "filename": "Whatsbottled.PNG",
+                    "filesize": "328730",
+                    "mimetype": "image/png"
+                }
+            ],
+            "field_image": {
+                "target_id": "89",
+                "alt": "Red brick manor wines",
+                "title": "",
+                "width": "800",
+                "height": "480",
+                "url": "/sites/default/files/2019-05/Redbrick.png",
+                "filename": "Redbrick.png",
+                "filesize": "482374",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "1",
+                "term_name": "Drupal Sites",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Red Brick Manor Wines",
+                "format": "basic_html"
+            },
+            "field_site_status": {
+                "value": "livepublic"
+            }
+        }
+    },
+    {
+        "id": "65",
+        "uuid": "da6c6dec-4787-4d38-9d1c-ba7b8df5b663",
+        "title": "Abstract Painting",
+        "type": "portfolio",
+        "created": "2022-01-21T13:27:26-05:00",
+        "changed": "2022-01-21T14:33:37-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "329"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1642793617"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/art/abstract-painting",
+                "pid": "106",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Inspired by some artwork I saw on Pinterest, I thought, \"That's cool!&nbsp; I can do that myself!\"&nbsp;&nbsp;</p>\r\n\r\n<p>It was not a quick project, however.&nbsp; This painting is LARGE.&nbsp; It's about 6 feet wide by 4 feet tall.&nbsp; Purchasing a painting of this size – or even purchasing a blank canvas of this size – was cost prohibitive.&nbsp; So I made the canvas myself with a roll of the canvas material, 1x2 boards, and a lot of staples.&nbsp;&nbsp;</p>\r\n\r\n<p>The canvas isn't perfect.&nbsp; It warped a little once I began painting, and the frame soaked up paint and liquid.&nbsp; But I'm very happy with the results.&nbsp; It hangs in my home office and provides a nice backdrop for Zoom meetings.</p>\r\n\r\n<p>One thing to note, I used the same paint color I put on the walls, but mixed it with water, white, black and other shades of green to create the different \"sections\" within the painting.&nbsp; That way it matches perfectly with my dark green wall and other office decor.&nbsp;&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "field_gallery": [],
+            "field_image": {
+                "target_id": "115",
+                "alt": "abstract painting in shades of green",
+                "title": "",
+                "width": "800",
+                "height": "587",
+                "url": "/sites/default/files/2022-01/KD-abstract_painting_0.png",
+                "filename": "KD-abstract_painting_0.png",
+                "filesize": "875659",
+                "mimetype": "image/png"
+            },
+            "field_portfolio_category": {
+                "target_id": "14",
+                "term_name": "Art",
+                "term_vocabulary": "portfolio_category"
+            },
+            "field_short_description": {
+                "value": "Abstract Painting",
+                "format": "basic_html"
+            },
+            "field_site_status": []
+        }
+    }
+]

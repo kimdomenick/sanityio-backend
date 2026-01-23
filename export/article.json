@@ -1,0 +1,2241 @@
+[
+    {
+        "id": "13",
+        "uuid": "4e3a3226-558d-452f-83a6-0d05d3ce5a2c",
+        "title": "Drupal 7 - Custom Breadcrumbs with PHP",
+        "type": "article",
+        "created": "2018-04-04T14:20:28-04:00",
+        "changed": "2019-08-01T15:27:41-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "205"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564687661"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-7-custom-breadcrumbs-php",
+                "pid": "56",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I have a content type called Features. This content type contains multiple subcategories of data, including News Releases, Awards, Informative Tips, and Patient Stories. This subcategory is a field on the content type, and is chosen when a Feature node is created. Because data pertains to different subcategories, I preferred to have the sub-category in the breadcrumb string. Below is how I accomplished this.</p>\r\n\r\n<ol>\r\n\t<li>Created the Content Type and all required fields.</li>\r\n\t<li>On the Edit Tab of the Content Type, checked the option 'Display defined custom breadcrumbs on node edit form'</li>\r\n\t<li>Navigated to admin/structure/custom_breadcrumbs</li>\r\n\t<li>On the Node tab, added a new breadcrumb, gave it a name of 'News Item' and associated it with the Node type of 'Features'.</li>\r\n\t<li>For Breadcrumb visibility, added the following PHP code:&nbsp;\r\n\t<pre>\r\n<code class=\"language-php\">if ($node-&gt;field_article_type['und'][0]['value'] == 'newsrelease') return TRUE;</code></pre>\r\n\r\n\t<p>&nbsp;</p>\r\n\t</li>\r\n\t<li>For Titles, added the display title of the breadcrumb, in this case 'News'</li>\r\n\t<li>For Path, entered the real path of the parent page. In this case, I wanted the parent breadcrumb to go to&nbsp;<a href=\"http://domain/newsroom\">http://domain/newsroom</a>. So the path is simply 'newsroom'</li>\r\n\t<li>Repeated for the additional subcategories, using the machine name of the subcategory for each PHP statement</li>\r\n</ol>\r\n\r\n<p>Below is a screen shot of my setup for News Releases:&nbsp;</p>\r\n\r\n<p style=\"color: rgb(0, 0, 0); font-family: &quot;Times New Roman&quot;; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-style: initial; text-decoration-color: initial;\"><img alt=\"breadcrumb set up\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"9b016c56-b7ba-49e7-8f6c-ddc3b4ddcd32\" src=\"/sites/default/files/inline-images/Breadcrumb1.png\" /></p>\r\n",
+                "summary": "This article covers a scenario where the Custom Breadcrumbs module needed a little help from PHP in order to display as desired on a particular content type.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1522866207",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "17",
+                "alt": "PHP logo",
+                "title": "",
+                "width": "256",
+                "height": "256",
+                "url": "/sites/default/files/2018-04/PHP.png",
+                "filename": "PHP.png",
+                "filesize": "37215",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2016-10-03"
+            },
+            "field_tags": {
+                "target_id": "5",
+                "term_name": "custom breadcrumbs",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "14",
+        "uuid": "4e969557-8a58-47c5-bde6-c7071dbeb462",
+        "title": "Drupal 7 - Elysia Cron & the Feeds Module",
+        "type": "article",
+        "created": "2018-04-04T14:27:17-04:00",
+        "changed": "2019-08-01T15:28:42-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "206"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564687722"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-7-elysia-cron-feeds-module",
+                "pid": "57",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>NOTE: My Drupal environment is locally hosted, and I have root access to the web and database servers, which are Red Hat Linux. This may make my processes different from someone with a different setup. &nbsp;</p>\r\n\r\n<p>I intially struggled to understand how the Drupal Feeds module interacted with Cron. Despite a number of articles available online, it took me a while to get it right. The one most important step - and probably the least intuitive to me - is setting up the Drupal Cron job to run EVERY MINUTE at your server level. This worried me, because I assumed that all of Drupal's various cron requests, from feeds to caching to system maintenance, would try to run every minute. However, this is where the Elysia Cron module takes over.</p>\r\n\r\n<p>Finally, set up your feed and importer at /admin/structure/feeds. This article will not fully cover the details of creating and configuring a feed, but gives mention to the following items:&nbsp;</p>\r\n\r\n<ol>\r\n\t<li>Run crontab -e from a command line on the server that contains the Drupal installation. My job looks like this, where domain is my domain name and cron key is the value from admin/config/system/cron/settings.\r\n\t<p>* * * * * /usr/bin/wget -o - -q -t<span>&nbsp;</span><a href=\"http://domain/cron.php?cron_key=xxxxx\">http://domain/cron.php?cron_key=xxxxx</a></p>\r\n\t</li>\r\n\t<li>Install<span>&nbsp;</span><a href=\"https://www.drupal.org/project/elysia_cron\">Elysia Cron</a><span>&nbsp;</span>and configure. This is where you gain granular access over each of the Drupal threads that would typically run within the Cron job scheduled in #1. Now, out of the box, you get<span>&nbsp;</span><strong>one setting</strong><span>&nbsp;</span>for all Feeds. You can write a custom module to expand on this, but the base functionality allows only one frequency for all Feeds. If, like me, you only have two feeds, this isn't a problem. I set feeds_cron to run every 15 minutes. It works great. I can't say that the same would be true for a site running many large feed imports.</li>\r\n\t<li>In additional to scheduling feeds_cron to run at a particular interval in Elysia Cron, I also had to tell job_scheduler_cron to run at the same interval - for me, every 15 minutes:&nbsp;<br />\r\n\t<img alt=\"Cron settings\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"5d28b98f-364e-4086-9457-84147a09bd2b\" src=\"/sites/default/files/inline-images/elysia_cron.png\" /></li>\r\n</ol>\r\n\r\n<ul>\r\n\t<li>The Basic Settings - Periodic Import I set to<span>&nbsp;</span><strong>As often as possible</strong>. This setting by itself does nothing. It's Cron and Elysia Cron that run your import.</li>\r\n\t<li>I also check<span>&nbsp;</span><strong>Import on submission</strong><span>&nbsp;</span>and<span>&nbsp;</span><strong>Process in background</strong>.</li>\r\n\t<li>On the Settings for File upload, I check&nbsp;<strong><span>Supply path to file or directory directly</span></strong><span><span>&nbsp;</span>and&nbsp;</span><strong><span>public: Public local files served by the webserver.</span></strong></li>\r\n\t<li>On the Import page, I place the file to be imported in the public:// directory. For my Drupal installation, this is sites/default/files/</li>\r\n</ul>\r\n\r\n<p>And that's how I schedule all of my feeds to run automatically every 15 minutes.</p>\r\n",
+                "summary": "This article covers how I schedule feeds to import and update Drupal content on a regular basis.",
+                "format": "basic_html"
+            },
+            "comment": {
+                "status": "2",
+                "cid": "0",
+                "last_comment_timestamp": "1522866656",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "19",
+                "alt": "System icon",
+                "title": "",
+                "width": "256",
+                "height": "256",
+                "url": "/sites/default/files/2018-04/Sys.png",
+                "filename": "Sys.png",
+                "filesize": "44798",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2016-11-25"
+            },
+            "field_tags": {
+                "target_id": "6",
+                "term_name": "feeds cron schedule",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "15",
+        "uuid": "4c9d8082-38d7-4e3e-a6e0-fe70f58df9bf",
+        "title": "Drupal 7 - Update Problems - Media/File Entity",
+        "type": "article",
+        "created": "2018-04-04T14:32:16-04:00",
+        "changed": "2019-08-01T15:29:24-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "207"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564687764"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-7-update-problems-mediafile-entity",
+                "pid": "58",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>A quick Google search shows you that the Media and File Entity modules have been causing trouble for many years for those attempting to upgrade one or the other. &nbsp;Just take a look at some of these articles:</p>\r\n\r\n<ul>\r\n\t<li><a href=\"https://www.drupal.org/node/2082037\">https://www.drupal.org/node/2082037</a></li>\r\n\t<li><a href=\"https://www.drupal.org/node/1496624\">https://www.drupal.org/node/1496624</a></li>\r\n\t<li><a href=\"https://www.drupal.org/node/1846518\">https://www.drupal.org/node/1846518</a></li>\r\n</ul>\r\n\r\n<p>I, too, have had some challenges in the past updating these modules, so when I ran into issues applying the 7.x-2.0 Media module update released on April 6, 2017, I decided to document how I resolved these issues and successfully updated.</p>\r\n\r\n<p>On my first attempt, update.php indicated that 22 database updates could not be applied due to a dependency on File Entity 2.x. &nbsp;I confirmed (at least from a visual inspection) that I had the 2.x version of File Entity. &nbsp;I tried applying patches from the above-referenced articles, but one of the patches failed, and another one only allowed me to apply some of the database updates. &nbsp;</p>\r\n\r\n<p>I started over with a clean copy of the media module by deleting the folder in sites/all/modules. &nbsp;Same problem. &nbsp;It then occurred to me that even though my File Entity version looked up to date, perhaps it wasn't. &nbsp;I deleted the module folder in sites/all/modules, downloaded a new copy of File Entity, applied it and ran update.php. &nbsp;</p>\r\n\r\n<p>Magic. &nbsp;Pure magic.</p>\r\n\r\n<p>Lesson learned: Don't assume. &nbsp;If Drupal is telling you a dependency is missing, try downloading the module again.</p>\r\n",
+                "summary": "A quick Google search shows you that the Media and File Entity modules have been causing trouble for many years for those attempting to upgrade one or the other.",
+                "format": "basic_html"
+            },
+            "comment": {
+                "status": "2",
+                "cid": "0",
+                "last_comment_timestamp": "1522866833",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "20",
+                "alt": "update errors icon",
+                "title": "",
+                "width": "504",
+                "height": "522",
+                "url": "/sites/default/files/2018-04/UpdateErrors.png",
+                "filename": "UpdateErrors.png",
+                "filesize": "328384",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2017-01-17"
+            },
+            "field_tags": {
+                "target_id": "7",
+                "term_name": "update error media file entity",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "16",
+        "uuid": "a8d10070-9308-4b52-a489-c778188a58c8",
+        "title": "Drupal 7 - Theming phone numbers with Google Analytics code",
+        "type": "article",
+        "created": "2018-04-04T14:34:19-04:00",
+        "changed": "2019-08-01T15:44:05-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "215"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564688645"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-7-theming-phone-numbers-google-analytics-code",
+                "pid": "59",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>We use Google Analytics to track all of the usual stuff, but my PR folks also wanted track phone number link clicks from mobile devices. &nbsp;In order to do that, Google has code (something like the following) that has to be added around a clickable phone number.</p>\r\n\r\n<p><em>onclick=\"ga('send', 'event', 'Call', 'Call', '800-888-8888')\"</em><span>&nbsp;</span>&nbsp;</p>\r\n\r\n<p>This is fine if you're adding a phone number to a body field or a static block. &nbsp;But many of my phone numbers are their own field in various content types. &nbsp;Or they're displayed through Views. &nbsp;</p>\r\n\r\n<p>Thinking that those in Views would be easy, I started with them, and attempted to rewrite the results of my phone number fields to include the onclick. &nbsp;But views stripped away the Javascript no matter what input format I used. &nbsp;I read enough to articles to realize it wasn't just me, although I found conflicting opinions about whether the Javascript removal was correct Views behavior. &nbsp;I aslso briefly looked at the<span>&nbsp;</span><a href=\"https://drupal.org/project/ga_push\">GA Push Module</a>,&nbsp;but I typically try to find a solution that doesn't involve installing ANOTHER module. &nbsp;</p>\r\n\r\n<p>So I decided to theme my phone number fields (named 'Mobile Dial' and 'Telephone'). &nbsp;</p>\r\n\r\n<p>First I copied field.tpl.php and placed it in /sites/all/themes/&lt;theme name&gt;/templates. &nbsp;I renamed the file field--field-mobile-dial.tpl.php and replaced the existing code with this:</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">?&gt;\r\n&lt;?php foreach ($items as $delta =&gt; $item) : ?&gt;\r\n&lt;a href=\"tel:&lt;?php print render($item); ?&gt;\" onclick=\"ga('send', 'event', 'Call', 'Call', '&lt;?php print render($item); ?&gt;');\"&gt;&lt;?php print render($item); ?&gt;&lt;/a&gt;\r\n&lt;?php endforeach; ?&gt;</code></pre>\r\n\r\n<p>Secondly, I had a view named 'locations' that displayed only 2 fields: a Title and the Telephone field. &nbsp;Since there were only 2 fields in the view, I decided to theme the whole view, and I used the file views-view-field<strong>s</strong>.tpl.php. &nbsp;I copied it to&nbsp;<span>/sites/all/themes/&lt;theme name&gt;/templates and named it views-view-fields--locations--block.tpl.php (because there was only one view display, which was 'block'). &nbsp;I replaced the existing code with this:</span></p>\r\n\r\n<pre>\r\n<code class=\"language-php\">?&gt;\r\n&lt;?php print $fields['title']-&gt;content ?&gt;&lt;br&gt;\r\n&lt;a href=\"&lt;?php print $row-&gt;field_field_telephone[0]['rendered']['#href']; ?&gt;\" onclick=\"ga('send', 'event', 'Call', 'Call', '&lt;?php print $row-&gt;field_field_telephone[0]['rendered']['#href']; ?&gt;');\"&gt;&lt;?php print $row-&gt;field_field_telephone[0]['rendered']['#title']; ?&gt; &lt;/a&gt;</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span>These two changes allowed us to track phone number clicks from mobile devices within Google Analytics without installing any new modules.</span></p>\r\n",
+                "summary": "There may be multiple ways to tackle this problem, but here are the basic requirements I had to meet and how I achieved those requirements through Drupal's theming layer.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "2",
+                "cid": "0",
+                "last_comment_timestamp": "1522866927",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "21",
+                "alt": "phone icon",
+                "title": "",
+                "width": "256",
+                "height": "256",
+                "url": "/sites/default/files/2018-04/GAPhone.png",
+                "filename": "GAPhone.png",
+                "filesize": "53663",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2017-03-25"
+            },
+            "field_tags": {
+                "target_id": "8",
+                "term_name": "google analytics phone telephone theme views",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "17",
+        "uuid": "4eed41f7-1ec4-4026-8b1a-1051f67cf19f",
+        "title": "Drupal 7 - When View Rows Don't Display for Anonymous Users",
+        "type": "article",
+        "created": "2018-04-04T14:35:40-04:00",
+        "changed": "2019-08-01T15:30:28-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "208"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564687828"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-7-when-view-rows-dont-display-anonymous-users",
+                "pid": "60",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I created a view that looked great - from<span>&nbsp;</span><em>my</em><span>&nbsp;</span>perspective, as an Administrator with full access to my Drupal site. &nbsp;</p>\r\n\r\n<p>However, when I asked an anonymous user to have a look, some of the view results were missing. &nbsp;Furthermore, a sub-admin role (with more restrictive access than I have) also could not see some of the view results.</p>\r\n\r\n<p>This immediately \"felt like\" a permissions issue, but the permissions on the view were set at View Published Content, which the Anonymous role had authority to do. &nbsp;The thing that really bugged me was how/why some results (rows) were visible, while others were missing.</p>\r\n\r\n<p>I started looking more closely at the view's relationship. &nbsp;My view used an Entity Reference relationship to pull data from a referenced content type.&nbsp; However, the relationship did not always exist (or was not true). &nbsp;I found that when the relationship existed, the view results displayed for everyone. &nbsp;When the relationship did not exist, the results were hidden from everyone but me(?). &nbsp;</p>\r\n\r\n<p>If you're wondering why anyone might create such a view, I'll provide a little more detail.</p>\r\n\r\n<p>My view pulled every published instance of a content type called 'Home Page Info Blocks,' which are as their name suggests: blocks of information for the Home Page. &nbsp;Some blocks needed to pull information from a referenced Location content type. &nbsp;In this view, I needed to pull a patient waiting number from our Urgent Care locations. &nbsp;But, this only accounted for some of the Home Page Info Blocks. &nbsp;Other blocks just needed to display static content or a promotional ad or whatever was deemed necessary to be on the Home Page. &nbsp;The portion of Home Page Info Blocks that contained an Entity Reference to a Location were the rows that displayed for everyone. &nbsp;The Home Page Info Blocks without the relationship were the missing rows for my anonymous and other users. &nbsp;</p>\r\n\r\n<p><em>But I could see them!</em><span>&nbsp;</span>&nbsp;I could see them on the view's page<span>&nbsp;</span><em>and</em><span>&nbsp;</span>in the Auto-preview of the View editor. &nbsp;My view was legitimately returning all results, regardless of whether the relationship existed. &nbsp;And so it seemed (again) like a permissions problem. &nbsp;</p>\r\n\r\n<p>Googling the description of this issue was challenging, because it was hard to describe what was happening. &nbsp;But somehow I located this gem of an article:&nbsp;<a href=\"http://forumone.com/blog/adding-relationship-your-view-your-results-might-be-different-you-expect/\">Adding a Relationship to Your View? Your Results Might be Different than you Expect</a></p>\r\n\r\n<p>I won't recreate the article's content here; the author did a great job of describing the problem and potential solutions. &nbsp;But in summary, this<span>&nbsp;</span><em>is</em><span>&nbsp;</span>a permissions \"bug\", which has been<span>&nbsp;</span><a href=\"https://www.drupal.org/node/1349080#comment-7331416\">patched in Drupal 8</a>. &nbsp;The quickest way to work around this issue in D7 is to disable SQL rewriting, a view setting that prevents node access criteria from being added to the view's query. &nbsp;</p>\r\n\r\n<p>I'm sure there are alternatives. &nbsp;I probably could have rewritten the view and/or modified my content types, but disabling SQL rewriting took 2 seconds. &nbsp;And it worked exactly as expected. &nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "I created a view that looked great - from my perspective, as an Administrator with full access to my Drupal site.  ",
+                "format": "basic_html"
+            },
+            "comment": {
+                "status": "2",
+                "cid": "0",
+                "last_comment_timestamp": "1522867403",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "22",
+                "alt": "anonymous user icon",
+                "title": "",
+                "width": "225",
+                "height": "225",
+                "url": "/sites/default/files/2018-04/anonymous.jpg",
+                "filename": "anonymous.jpg",
+                "filesize": "2116",
+                "mimetype": "image/jpeg"
+            },
+            "field_release_date": {
+                "value": "2017-04-02"
+            },
+            "field_tags": {
+                "target_id": "9",
+                "term_name": "views relationships anonymous missing row",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "18",
+        "uuid": "06ba24c1-c817-4a54-aedf-f8a15ebae3f1",
+        "title": "Better Searching in Drupal 7 (and the roadblocks along the way)",
+        "type": "article",
+        "created": "2018-04-04T14:44:01-04:00",
+        "changed": "2019-08-01T15:31:26-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "209"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564687886"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/better-searching-drupal-7-and-roadblocks-along-way",
+                "pid": "61",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>As many do, I started out using the core search module for my site, but it was lacking the features that I thought made a powerful and useful search tool.&nbsp; I installed&nbsp;<a href=\"https://www.drupal.org/project/search_api\">Search API</a>&nbsp;and used it in conjunction with the Fuzzy Search module, which was sufficient for a while, but eventually I wanted more:&nbsp; autocomplete, highlighted search term results, and facets. &nbsp;Also, at the time of this post, Fuzzy search appeared to be an abandoned project, without any updates in nearly two years.&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>I found a great article that summarized the available search options for D7 and helped me to choose the right solution:&nbsp;<a href=\"https://swsblog.stanford.edu/blog/better-search-drupal\">https://swsblog.stanford.edu/blog/better-search-drupal</a></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>I decided on a combination of Search API – which I was already using – and the&nbsp;<a href=\"https://www.drupal.org/project/search_api_db\">Search API Database Search</a>&nbsp;module.&nbsp; Along with&nbsp;<a href=\"https://www.drupal.org/project/search_api_autocomplete\">Search API Autocomplete</a>&nbsp;and&nbsp;<a href=\"https://www.drupal.org/project/facetapi\">Facet API</a>&nbsp;and their module dependencies, I had exactly what I needed.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Although I was already familiar with the Search API setup,&nbsp;<a href=\"https://www.reinisfischer.com/custom-drupal-search-built-search-api-database-search-views\">this article</a>&nbsp;helped with the integration of the Search API Database Search module and setting up the search results view.&nbsp; I won’t duplicate its content here, but rather I’ll explain some of the challenges I had completing this setup and beyond.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Some of the necessary configuration was already in place, because Search API was installed and working.&nbsp; However, I ran into a snag with the search results view when an option that should have been there, well… it just wasn’t there.&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>When creating the search results view, I should have been able to choose the name of my search index in the&nbsp;<em>Show&nbsp;</em>setting.&nbsp; In my case, “Default Node Index” was my index, but that option wasn’t available. &nbsp;I found another article that directed me to clear the cache in&nbsp;<em>admin/config/development/performance</em>, and once I did that, my index was available to select. &nbsp;This stumped me for quite a while, and the resolution was somewhat illusive.&nbsp; In fact, I later tried to locate the article that provided the cache-clearing suggestion, and I couldn’t find it.&nbsp; So, clear your cache!</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Since one of my requirements was an autocomplete in the search box, I installed the Search API Autocomplete module.&nbsp; I ran into two issues with this configuration.&nbsp; One – out of the box, it didn’t work.&nbsp; Even after configuring the Autocomplete tab settings of my search index, I could type all day long in my search box, but no suggestions appeared.&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>It seems non-intuitive to me, but the Search API Autocomplete module has a permission setting in&nbsp;<em>admin/people/permissions</em>&nbsp;that allows you to specify which roles can use autocomplete.&nbsp; Once I granted it to Anonymous and Authenticated users, it worked for everyone.&nbsp; In fairness to the developer, the README file does tell you about the permission setting.&nbsp; But there’s an order in which you must configure this module’s settings and permissions.&nbsp; The permission setting doesn’t even appear until&nbsp;<em>after</em>&nbsp;you configure the Autocomplete tab of your index here:&nbsp;<em>admin/config/search/search_api/index/{index name here}/autocomplete</em>.&nbsp; Once you’ve enabled your server and saved your settings, the permission becomes available for you to set.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>The second issue with Search API Autocomplete was the default styling of the drop-down suggestions box.</span>&nbsp;&nbsp;<span>The background of the box was transparent, which made suggestions hard to read when the drop-down displayed over top of things like images and other text.</span>&nbsp;&nbsp;<span>The suggestion hover color was set to white.</span>&nbsp;&nbsp;<span>On a white page background, this caused the term to be invisible when moused-over.</span>&nbsp;&nbsp;<span>What made this more challenging was my struggle to isolate the right divs, spans, and classes using my standard browser tools.</span>&nbsp;&nbsp;<span>I typically use Chrome’s Developer tools to select/inspect a page element to figure out where it’s being styled, and then override, if needed.</span>&nbsp;&nbsp;<span>But there was no easy way to select the drop-down.</span>&nbsp;&nbsp;<span>The drop-down – and the suggestions themselves – only appeared in the HTML when I was actively typing in the search box.</span>&nbsp;&nbsp;<span>When I clicked my Chrome Select tool to select the drop-down, it disappeared.</span>&nbsp;&nbsp;<span>After choosing the Select tool, I could no longer type in the search box to make the drop-down appear again.</span>&nbsp;&nbsp;<span>It was a vicious loop.</span>&nbsp;&nbsp;<span>Eventually, I found that I could choose my Select tool and then TAB to the search box, and I could then identify the elements that needed styling.</span>&nbsp;&nbsp;<span>Here is the CSS I added to my search suggestions:</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><em><span><span>#autocomplete {position: absolute; background-color:white; color:#746c6c; box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.28); -moz-box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.28); -webkit-box-shadow: 3px 4px 13px rgba(0, 0, 0, 0.28);}</span></span></em></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><em><span><span>.search-api-autocomplete-suggestion:hover {background-color:#00678f; cursor:pointer;}</span></span></em></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>With autocomplete working, I focused on the search results themselves.&nbsp; I’d created the search results view quickly and had only added the fields node title and meta description.&nbsp; This was OK, except that sometimes the search term existed in the node body but not the title or description.&nbsp; This made the search results seem less relevant.&nbsp; What I wanted to do was show the section of text where the term existed, without (obviously) displaying the entire node body.&nbsp; This and other configuration options were available on the Filters tab of the index config:&nbsp;&nbsp;<em>admin/config/search/search_api/index/{index name here}/workflow</em>. &nbsp;Under Processor settings, I selected the option to Create an excerpt and set a length of 256 characters.&nbsp; Then in my search results view, I removed the meta description field and added the Search Excerpt field. &nbsp;&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Next I wanted my search term to be highlighted in my results page.&nbsp; Also on the Filters tab, under Processors settings, I checked the option for Highlighting.&nbsp; I tested my search, and everything worked great.&nbsp; However, I didn’t like the way it looked.&nbsp; Back on Filter Tab/Processor settings, I customized the Highlighting prefix and suffix.&nbsp; The default was &lt;strong&gt; and &lt;/strong&gt;.&nbsp; I wanted to take advantage of a class in my custom CSS file, so I adjusted it to &lt;span class=”mycolor”&gt;&lt;strong&gt; and &lt;/strong&gt;&lt;/span&gt; and re-indexed.&nbsp; While I was testing again, I noticed that the highlighting worked in my excerpt but not in my title.&nbsp; I checked the Filters again, and I had accidentally excluded the Title field from the excerpt (sometimes I get a little click-happy).&nbsp; For some sites, excluding certain fields from highlighting might be desirable, so it’s worth noting that you can choose – or not choose – from any of the fields that you index.&nbsp; After allowing the Title field, my highlighting worked as expected. &nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>But what didn’t seem to work was relevance. &nbsp;Regardless of the search term, the results page seemed to display the things I didn’t care about first.&nbsp; I found&nbsp;<a href=\"https://www.drupal.org/node/2566521\">this article</a>&nbsp;that explains how relevance/ranking works, and it helped me identify my mistake.&nbsp; When I created the search results view, it seemed obvious that I should sort the search relevance in ASCENDING order.&nbsp; But since relevance is based on counting the number of times a term appears in the indexed fields, I needed to sort by DESCENDING instead, so that the highest counts appeared first.</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>With those items working as needed, there was one more feature I wanted, and that was Facets.&nbsp; Fortunately, setting up Facets was the easiest part of this configuration.&nbsp; Search API came boxed with a Search Facets module; it just required the Facets API module.&nbsp; Enabling both of these modules allowed me to access the settings on the Facets tab of index config&nbsp;<em>admin/config/search/search_api/index/{index name here}/facets</em>.&nbsp; There are multiple facets you can use to categorize your search results.&nbsp; For me, categorizing by Content Type was what I needed, and I stuck with the default settings for the facet.&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>This automatically created a block for Facet API which I configured to display on my search page, and it worked perfectly without any other configuration. &nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n\r\n<p><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>After a few stylistic tweaks to my search results view, I was done.&nbsp; And although it was a bit of work to set up, I’m very pleased with the combination of Search API, Search API Database, Search API Autocomplete, and Search Facets for my Drupal 7 website searching.&nbsp;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></p>\r\n",
+                "summary": "For my small-medium website (less than 5000 content nodes), this search configuration is the one I’ve found the most satisfactory, with the functionality my organization needs.  ",
+                "format": "basic_html"
+            },
+            "comment": {
+                "status": "2",
+                "cid": "0",
+                "last_comment_timestamp": "1522867515",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "23",
+                "alt": "search icon",
+                "title": "",
+                "width": "363",
+                "height": "272",
+                "url": "/sites/default/files/2018-04/D7Search.png",
+                "filename": "D7Search.png",
+                "filesize": "45075",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2017-12-14"
+            },
+            "field_tags": {
+                "target_id": "10",
+                "term_name": "search autocomplete facets index highlights",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "19",
+        "uuid": "8e9444e1-b908-4cc8-ac45-57ee166a33b3",
+        "title": "Drupal 7 - Implementing RESTFul Web Services",
+        "type": "article",
+        "created": "2018-04-04T14:48:24-04:00",
+        "changed": "2019-08-01T15:40:25-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "214"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564688425"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-7-implementing-restful-web-services",
+                "pid": "62",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Implementing REST was a recent requirement in order to expose our Drupal website's data to external consumers.&nbsp; It felt like an enormous task - and it was! - but doable with a little help.</p>\r\n\r\n<p>I found an extensive number of articles and tutorials online, but this video series by<span>&nbsp;</span><a href=\"https://www.youtube.com/channel/UCL7LYJ25RUyY7rsypFDl_FA\">Mateu@e0ipso</a><span>&nbsp;</span>was, for me, the best and most comprehensive.&nbsp;&nbsp;</p>\r\n\r\n<p><a href=\"https://www.youtube.com/playlist?list=PLZOQ_ZMpYrZv8_c7jd_CkO_93-DnyVFY5\">https://www.youtube.com/playlist?list=PLZOQ_ZMpYrZv8_c7jd_CkO_93-DnyVFY5</a></p>\r\n\r\n<p>I followed this series step-by-step, often pausing to recreate the code the Mateu used, which included creating a custom module and then tweaking that module for my own purposes.</p>\r\n\r\n<p>My RESTFul API includes a resource for Nodes of a particular content type and a separate resource for a Taxonomy Term that is used in those nodes.&nbsp; As simple as it sounds, using the referenced Taxonomy Term - and displaying the name, rather than the ID - was one of the more challenging steps in my process.&nbsp; In the end, these are the resources that worked for me to generate the JSON I wanted.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>NODE RESOURCE:</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">class Summit_Providers__1_0 extends ResourceNode {\r\n\r\n/**\r\n\r\n*{@inheritdoc}\r\n\r\n*/\r\n\r\nprotected function publicFields(){\r\n\r\n$public_fields = parent::publicFields();\r\n\r\n//Rename label\r\n\r\n$public_fields['name'] = $public_fields['label'];\r\n\r\nunset($public_fields['label']);\r\n\r\n//Hide fields\r\n\r\n$public_fields['self']['methods'] = array();\r\n\r\n$public_fields['links']['methods'] = array();\r\n\r\n//Add more fields\r\n\r\n$public_fields['standard_specialties'] = array(\r\n\r\n'property' =&gt; 'field_standard_specialties',\r\n\r\n'referencedIdProperty' =&gt; 'name'\r\n\r\n);\r\n\r\n$public_fields['school'] = array('property' =&gt; 'field_provider_school');\r\n\r\n$public_fields['internship'] = array('property' =&gt; 'field_provider_internship');\r\n\r\n$public_fields['residency'] = array('property' =&gt; 'field_provider_residency');\r\n\r\n$public_fields['fellowship'] = array('property' =&gt; 'field_provider_fellowship');\r\n\r\n$public_fields['language'] = array('property' =&gt; 'field_provider_language');\r\n\r\nreturn $public_fields;\r\n\r\n}\r\n\r\n}</code></pre>\r\n\r\n<p>TAXONOMY TERM RESOURCE:<br />\r\n&nbsp;</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">class Standard_Specialties__1_0 extends ResourceNode {\r\n\r\n/*\r\n\r\n*{@inheritdoc}\r\n\r\n*/\r\n\r\nprotected function publicFields(){\r\n\r\n$public_fields = parent::publicFields();\r\n\r\n$public_fields['description'] = array('property' =&gt; 'description');\r\n\r\nreturn $public_fields;\r\n\r\n}\r\n\r\n}</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "REST -- JSON -- Drupal 7",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "2",
+                "cid": "0",
+                "last_comment_timestamp": "1522867820",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "24",
+                "alt": "restful icon",
+                "title": "",
+                "width": "225",
+                "height": "225",
+                "url": "/sites/default/files/2018-04/restapi.png",
+                "filename": "restapi.png",
+                "filesize": "5360",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2018-03-09"
+            },
+            "field_tags": {
+                "target_id": "11",
+                "term_name": "rest json restful",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "20",
+        "uuid": "280c36d2-23cd-4b31-b135-ffc56bb23c36",
+        "title": "Wrapping Your Head Around Entity-Reference Views",
+        "type": "article",
+        "created": "2018-04-04T14:51:00-04:00",
+        "changed": "2019-08-01T15:33:07-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "210"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564687987"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/wrapping-your-head-around-entity-reference-views",
+                "pid": "63",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>While cross-training a colleague on Drupal Views, I had to reacquaint myself with the usage of Entity References and Relationships.&nbsp; It's not uncommon for me to build Views that use those features, but once they're built, they just work, and I rarely have to touch them again.&nbsp; Since I initially found myself stumbling over these steps, I though it might be good to document our example.&nbsp;&nbsp;</p>\r\n\r\n<p>Here was our situation...</p>\r\n\r\n<p>We created two sample content types in a test site: Artist and Album.&nbsp;</p>\r\n\r\n<p>The Artist content type was as basic as possible, just Title, Body, and Photo fields.</p>\r\n\r\n<p>The Album content type had a few more fields, including an Entity Reference to the appropriate Artist node.&nbsp; &nbsp;</p>\r\n\r\n<p>After populating our test site with some sample content, we wanted to display a list of Albums on the Artists' pages.&nbsp; For example, the page for&nbsp;<span>Red Hot Chili Peppers should display a list of Albums like<span>&nbsp;</span></span><em>Stadium Arcadium</em><span>, and<span>&nbsp;</span></span><em>Blood Sugar Sex Magik.</em></p>\r\n\r\n<p>But the Artist content had no references to Albums.&nbsp; Instead, the opposite was true: the Album content contained the entity reference back to Artist.&nbsp;&nbsp;</p>\r\n\r\n<p><span>We knew we wanted the fields Title and Album Cover from published content of type Album.&nbsp; We also knew we would need to add a relationship to field_artist.&nbsp; And thi</span><span>s is where it's easy to get things backwards, especially when you're trying to explain Views and Entity References to someone who isn't familiar with them.&nbsp; &nbsp;When adding the Relationship, the default language for the identifier was \"Content entity referenced from field_artist.\"&nbsp; Obviously, we could have changed this to any value, but I found it helpful to talk this through with my trainee:<span>&nbsp;</span><em>the field_artist is in the Album content type, and we're displaying fields from the Album content type, knowing that field_artist is what ties the two content types together...so what we're doing is correct.&nbsp;&nbsp;</em></span></p>\r\n\r\n<p><span>But for this view, the key to displaying the correct results was in setting a Contextual Filter on Node ID (Nid).&nbsp; Without the Contextual filter, we'd get a list of every album, not just the ones belonging to the Artist.&nbsp; The Contextual Filter needed the Relationship that we just established, and we needed to provide a default value of \"Content ID from URL.\"&nbsp;&nbsp;</span></p>\r\n\r\n<p><span>Our view was created in a Block, so after saving our view, we had to tell the Block to display on every page.&nbsp; The Contextual Filter and Relationship assured that it only displayed where we wanted it.&nbsp;&nbsp;</span></p>\r\n\r\n<p><span>Below are screenshots of our final View configuration and our block.&nbsp;&nbsp;</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"relationship set up\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"e393809d-7505-4824-b808-38c0fd74a447\" src=\"/sites/default/files/inline-images/Relationship.PNG\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"contextual filter set up\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"fab06f14-0690-40a9-ae96-729128ce6371\" src=\"/sites/default/files/inline-images/ContextualFilter.PNG\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"final view set up\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"bfec3316-2dc2-4c0c-bc12-9d1fb9a86f92\" src=\"/sites/default/files/inline-images/FinalView.PNG\" /></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><img alt=\"final block set up\" data-align=\"left\" data-entity-type=\"file\" data-entity-uuid=\"e6111a06-734a-41be-9ae2-3a791568bf62\" src=\"/sites/default/files/inline-images/FinalBlock.PNG\" /></p>\r\n",
+                "summary": "While cross-training a colleague on Drupal Views, I had to reacquaint myself with the usage of Entity References and Relationships. ",
+                "format": "basic_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1522868203",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "29",
+                "alt": "handshake icon",
+                "title": "",
+                "width": "200",
+                "height": "200",
+                "url": "/sites/default/files/2018-04/images.png",
+                "filename": "images.png",
+                "filesize": "2841",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2018-04-04"
+            },
+            "field_tags": {
+                "target_id": "12",
+                "term_name": "entity reference views",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "27",
+        "uuid": "6a6c6869-30cf-4ac2-bc9c-f360d715dd0d",
+        "title": "D8 Free Themes: A Bumpy Ride?",
+        "type": "article",
+        "created": "2018-04-18T11:37:30-04:00",
+        "changed": "2019-08-02T15:08:01-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "227"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564772881"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/d8-free-themes-bumpy-ride",
+                "pid": "64",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Playing with free themes hasn't been an entirely smooth process.&nbsp; But let's step back for a moment and talk about my theming workflow.</p>\r\n\r\n<p>A few years ago, implementing a new Drupal theme might have gone like this:</p>\r\n\r\n<ol>\r\n\t<li>Create a design mockup in Photoshop (or work with a Marketing/Graphics team to do so).</li>\r\n\t<li>Find a blank-canvas theme, like Omega or OOTB Bootstrap, and create a sub-theme.</li>\r\n\t<li>Write 200,000 lines of custom CSS to create something that resembles the mockup from step 1.</li>\r\n\t<li>Add any custom templates and tweak existing templates.</li>\r\n</ol>\r\n\r\n<p>Nowadays, my process is much shorter:</p>\r\n\r\n<ol>\r\n\t<li>Find existing theme that looks more-or-less like what I want and has a nice selection of layout regions.</li>\r\n\t<li>Add any custom templates and tweak existing templates.</li>\r\n</ol>\r\n\r\n<blockquote>\r\n<p>I like to experiment with free themes... when I find a free theme that I really like, I know that the premium version will be even better.</p>\r\n</blockquote>\r\n\r\n<p>I like to experiment with free themes or free versions, because when I find a free theme that I really like, I know that the premium version, or a similar premium theme from the same vendor/developer, will be even better.</p>\r\n\r\n<p>Also, if I'm building a site that will be managed by someone else, I prefer to give the client as much power as they can handle, so I like a theme with a generous amount of Appearance settings in the UI.&nbsp; (Not everyone dreams in CSS.&nbsp; Or so I'm told...) &nbsp;</p>\r\n\r\n<p>The above reasons are what led me to initially choose a free theme called <a href=\"https://www.drupal.org/project/icemagic\">Ice Magic</a> by CMSbots.com and its parent theme, Mbase (from the Bootstrap family) for a new D8 website.&nbsp; The theme is described as highly-configurable - and I agree on that point - but it's also a quirky little booger.</p>\r\n\r\n<p>It has an almost-overwhelming amount of Appearance settings (I know, I know... I just asked for a ton of Appearance settings) including a sampling of Homepage and Footer Contents that can be enabled/disabled.&nbsp; I LOVE sample content, but this content doesn't always play well with other content in the same regions.&nbsp; For example, enabling the sample content for the Footer region overwrote/hid other blocks I'd added to the Footer region.&nbsp; The Homepage Slider content worked out-of-the-box, but unless you opt for dark or dark-overlayed images, the navigation links do not have enough contrast.</p>\r\n\r\n<p>One of the coolest features of Ice Magic/Mbase is the ability to convert any region to a Bootstrap component... or it would be a cool feature if it worked.&nbsp; Here's a blurb from the Mbase download page: &nbsp;<br />\r\n&nbsp;&nbsp; &nbsp;\"Example: You can convert Sidebar left region to bootstrap modal region. Block titles of each block enabled for this region will appear as buttons and clicking them will open the block as bootstrap modal.\"&nbsp; Cool, right??</p>\r\n\r\n<p>I tried both the Modal and Carousel plugins, and neither worked, no matter what region I converted. Despite having multiple blocks assigned to the regions I tested, the Modal plugin displayed nothing; the Carousel plugin displayed a blank Carousel with no content.&nbsp; Now, I didn't play with this for long, and it's possible there's a missing dependency, but unfortunately the documentation is... uh, well... there isn't any documentation that I could find, so I'll say it's a bit lacking.</p>\r\n\r\n<p>Even more quirky is the administrative menu that floats over of the header and branding regions and partially disappears on any page other than Home.&nbsp; As a workaround, I displayed the admin menu as vertical instead of horizontal, but, for me, this workaround is only tolerable on a widescreen monitor.&nbsp; Otherwise, the admin menu blocks too much of my viewport.&nbsp; And it was this final issue that caused me to uninstall Ice Magic.</p>\r\n\r\n<p>Another theme I tried was <a href=\"https://www.drupal.org/project/creative_responsive_theme\">Creative Responsive</a> from Zymphonies.&nbsp; The first oddity I found was that the Site Slogan defaulted to an unreadable color on top of the dark header background.&nbsp; Sure, I can fix this, but why should I have to?&nbsp; I read that some people had trouble with their Bootstrap Slider; however, it worked for me exactly as described.&nbsp; The theme has a nice amount of regions, but 'Demonstrate block regions' only shows the location of 9 of the 16.&nbsp;</p>\r\n\r\n<p>When themes create specific appearance classes or layout classes for columns, etc., it's nice to know that they exist by way of code samples or sample content.&nbsp; I know this is typically a feature of premium themes, but it wouldn't hurt to have a few sample appearance classes or some sample content; this theme has neither.&nbsp; Overall, Creative Responsive is a decent theme and perhaps less buggy than Ice Magic.&nbsp; It just doesn't make me go \"wow.\"</p>\r\n\r\n<p>The third theme I experimented with is <a href=\"https://www.drupal.org/project/bootstrap_mint\">Bootstrap Mint</a> by Binu Varghese.&nbsp; It shrunk my logo to about 40px wide, making it unreadable; although, it was the only one of the three themes that did an OK job displaying a site slogan.&nbsp; Initially, I couldn't get the sample slider block to work.&nbsp; After switching the default theme to something else, and then switching back to Mint, the slider began displaying and rotating my images (caching, perhaps?).&nbsp; The tiny logo was the result of a hard-coded 37px width on any image in the Branding region.&nbsp; After raising that number to 100px, my logo was again legible.&nbsp; One annoying thing I discovered is that removing the User menu from the Footer Menu region also removes the Social Media links.&nbsp; I really like all of the regions that are available in this theme - 25 of them!&nbsp; As of the writing of this post, Bootstrap Mint is what I'm using on this site.</p>\r\n\r\n<hr class=\"style-mint\" />\r\n<p>I still believe that free themes are a great resource for builders of small or personal websites.&nbsp; Any many times, free themes will leave you pleasantly surprised.&nbsp; Other times, you'll get exactly what you paid for.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "Playing with free themes hasn't been an entirely smooth process.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1524066052",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "35",
+                "alt": "bootstrap icon",
+                "title": "",
+                "width": "364",
+                "height": "360",
+                "url": "/sites/default/files/2018-04/bootstrap.PNG",
+                "filename": "bootstrap.PNG",
+                "filesize": "133372",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2018-04-20"
+            },
+            "field_tags": [
+                {
+                    "target_id": "15",
+                    "term_name": "themes",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "16",
+                    "term_name": "free themes",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "17",
+                    "term_name": "D8",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "29",
+        "uuid": "51baef3a-1ae8-4c39-ba73-6ba19dea9224",
+        "title": "SQL - Unusual DateTime Functions in Computed Columns",
+        "type": "article",
+        "created": "2018-04-25T10:21:16-04:00",
+        "changed": "2019-08-01T15:26:55-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "204"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564687615"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/sql-unusual-datetime-functions-computed-columns",
+                "pid": "65",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I've had the pleasure of working with a data repository that stored date and time values as string data.&nbsp; Without getting into weeds of that, I'll just say I wasn't able to change anything about the repository, and therefore, had to work with it as is.&nbsp;</p>\r\n\r\n<p>When I say that date and time values were stored as strings, this is what I mean.&nbsp; The date/time <em>April 25, 2018 at 10:28am</em> would have been stored in two separate fields as strings:</p>\r\n\r\n<ul>\r\n\t<li>a Date field with the contents \"20180425\" indicating <em>yyyymmdd</em></li>\r\n\t<li>a Time field with the contents \"1028\" indicating <em>hhmm</em>.</li>\r\n</ul>\r\n\r\n<p>Fortunately, I was able to used Stored Procedures to copy/move the data into a target database, where I did a good bit of manipulation using <strong>Computed Fields</strong>.&nbsp; Here are some of the fun things I did with Computed Fields.</p>\r\n\r\n<ol>\r\n\t<li><strong>Turn the Time string representing hhmm (an event in time) into minutes from midnight.</strong>&nbsp; In order to do this, I had to select the hour portion of a string called Admittime, turn it numeric, and multiply it by 60, then turn the minute portion numeric, and add it to the hours.&nbsp; This returned a number of minutes from midnight that a particular event occurred.&nbsp;&nbsp;<br />\r\n\t<em><sub>(CONVERT([numeric](10,0),substring([Admittime],(1),(2))*(60))+CONVERT([numeric](10,0),substring([Admittime],(3),(4))))</sub></em><br />\r\n\t&nbsp;</li>\r\n\t<li><strong>Calculate number of minutes from midnight it is \"right now.\"&nbsp; </strong>I used the <em>datepart </em>method to select portions of the datetime value from <em>getdate().&nbsp; </em><br />\r\n\t<em><sub>(datepart(hour,getdate())*(60)+datepart(minute,getdate()))</sub></em><br />\r\n\t&nbsp;</li>\r\n\t<li><strong>Compare the values of item # 1 and 2, but do it all in one field.&nbsp; </strong>You can't create a computed field from another computed field.&nbsp; So, in order to compare the values from 1 and 2, I had to do it all in one field.<br />\r\n\t<em><sub>((datepart(hour,getdate())*(60)+datepart(minute,getdate())) - (CONVERT([numeric](10,0),substring([Admittime],(1),(2))*(60))+CONVERT([numeric](10,0),substring([Admittime],(3),(4)))))</sub></em></li>\r\n</ol>\r\n\r\n<p><br />\r\nThis is just one way to handle a string date/time, and it worked fine... until I had to calculate across a midnight divide.&nbsp; The problem with my original calculation in items 1 and 3 is that it always assumes the event date = today, because it's computing minutes from today's midnight.&nbsp; If that's true, the calculation works.&nbsp; If it's not true, the calculation is broken.&nbsp;</p>\r\n\r\n<p>Instead of doing a bunch of manipulation in the target database after the data was already populated, I decided to use one of my stored procedures to convert the date/time strings and populate a proper Datetime field.</p>\r\n\r\n<p>First I created a Datetime field called AdmitDateTime in the target database.&nbsp; In this case, I did not set a default value.&nbsp; Then in my stored procedure, I did the following:<br />\r\n<em><sub>UPDATE tablename<br />\r\nSET AdmitDateTime = (substring(AdmitDate,1,4) + '-' + substring(AdmitDate,5,2) + '-' + substring(AdmitDate,7,2) + ' ' + substring(Admittime, 1, 2) + ':' + substring(Admittime, 3, 2))<br />\r\nWHERE AdmitDateTime is null</sub></em></p>\r\n\r\n<p>This resulted in a Datetime field that I could then do typical date/time calculations against.&nbsp; I still used a Computed Field to figure out the number of minutes between an event and \"now,\" but the calculation was much simpler:<br />\r\n<em><sub>(datediff(minute,[AdmitDateTime],getdate()))</sub></em></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "Working with date/time values stored as strings creates unique challenges.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1524667127",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "36",
+                "alt": "sql database icon",
+                "title": "",
+                "width": "304",
+                "height": "334",
+                "url": "/sites/default/files/2018-04/sql.PNG",
+                "filename": "sql.PNG",
+                "filesize": "19228",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2016-11-15"
+            },
+            "field_tags": [
+                {
+                    "target_id": "18",
+                    "term_name": "sql",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "19",
+                    "term_name": "datetime",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "20",
+                    "term_name": "computed columns",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "21",
+                    "term_name": "computed fields",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "32",
+        "uuid": "e7f6d037-7fca-4855-9fec-c1967aa7a7ba",
+        "title": "Bargain Staging",
+        "type": "article",
+        "created": "2018-04-27T13:50:48-04:00",
+        "changed": "2018-05-02T09:34:02-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "96"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1525268042"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/bargain-staging",
+                "pid": "66",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Staging.&nbsp; It's what homeowners do to make their homes more appealing when they're trying to sell.&nbsp; It's basically cleaning, decluttering, furnishing, and decorating.&nbsp; If you need to know why it's important, read <a href=\"https://www.nar.realtor/research-and-statistics/research-reports/profile-of-home-staging\">this article</a> by the National Association of Realtors.&nbsp;</p>\r\n\r\n<p>I believe HGTV is largely responsible for home buyers who can't envision what to do with a blank slate... the ones who can't see beyond what you show them.&nbsp; HGTV has created the perspective that empty = not done.&nbsp; When have you ever watched a home renovation show that <em>didn't</em> end with a perfectly decorated and purposefully furnished space?&nbsp;</p>\r\n\r\n<p>But, hey, I love HGTV!&nbsp; And, as it turns out, I love interior decorating!</p>\r\n\r\n<p>I've also been in the unique position of having to sell multiple homes in a short period of time, without a ton of extra money to spend on professional staging or renovations.&nbsp; I painted my own walls, installed my own grout-and-mortar tile, refinished my own cabinets, hung my own shelves, and read tons of books and articles on how to decorate.&nbsp; I re-purposed old picture frames, often painting over or covering what was in them before; I used shelf paper and joint compound in unusual ways; I moved furniture around repeatedly until it felt right;&nbsp; I decorated with things I already had - vintage books, a large collection of wine corks (chuckle), scrap wood I found in the basement, branches from a tree we removed; I furnished mainly with items I already owned and purchased only minimal accessories.</p>\r\n\r\n<p>And what a cool experience it was!&nbsp; But more than that, the rooms in my collection of Interior photos are perfectly my style, they didn't cost a fortune to furnish and decorate, and I'm proud of them.&nbsp;<br />\r\n&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1524854461",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "1"
+            },
+            "field_image": {
+                "target_id": "43",
+                "alt": "saving money",
+                "title": "",
+                "width": "261",
+                "height": "250",
+                "url": "/sites/default/files/2018-05/BargainStagin.PNG",
+                "filename": "BargainStagin.PNG",
+                "filesize": "42670",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2018-04-27"
+            },
+            "field_tags": [
+                {
+                    "target_id": "22",
+                    "term_name": "staging",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "23",
+                    "term_name": "interior design",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "24",
+                    "term_name": "bargain staging",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "45",
+        "uuid": "44222b7c-32f1-4ea4-bd75-124b016405af",
+        "title": "Running D7 and D8 on the Same PHP Version",
+        "type": "article",
+        "created": "2018-06-18T15:00:50-04:00",
+        "changed": "2019-08-02T15:57:54-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "232"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564775874"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/running-d7-d8-same-php-version",
+                "pid": "54",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>A PHP upgrade might be required/desired for various reasons, including functionality, performance, and security.&nbsp; But what happens to Drupal when&nbsp;PHP is upgraded?&nbsp;</p>\r\n\r\n<p>Drupal 7 sites <a href=\"https://www.drupal.org/docs/8/system-requirements/php-requirements\">are compatible with PHP 5.2.4 and up</a>, but once you get to PHP 7x, there's some uncertainty with contributed modules.&nbsp;</p>\r\n\r\n<p>I recently upgraded PHP from 5.5 to 7.1 on a test server I use for both D7 and D8 sites.&nbsp; Although my D8 sites were functional on the older PHP version, contributed modules had version-specific requirements.&nbsp; The <a href=\"https://www.drupal.org/project/ldap\">LDAP </a>module, for instance, could not be enabled with PHP version 5.5.&nbsp;</p>\r\n\r\n<p>On PHP 7.1,&nbsp;one of my D7 sites was completely broken - I'm talking Server 500 Error on any node.&nbsp;In the Watchdog logs, I found a PHP error referencing the <a href=\"https://www.drupal.org/project/httprl\">HTTPRL </a>module.&nbsp; Disabling the module did not resolve the problem; I had to uninstall and completely remove the module folder before the site was functional again.&nbsp;</p>\r\n\r\n<p>In the HTTPRL documentation, PHP 5 is indicated as a requirement, and as of today, it's uncertain whether the module will be ported to D8. &nbsp;<a href=\"https://www.drupal.org/project/boost\">Boost </a>is my current caching solution, and my usage of HTTPRL is due to Boost Crawler's dependency.&nbsp; Although <a href=\"https://www.drupal.org/project/contrib_tracker/issues/2611322\">there is chatter</a> about the need for a Boost-like solution in D8, this module also has not yet been ported.</p>\r\n\r\n<hr class=\"style-mint\" />\r\n<p>Bottom line, you may be able to run D7 and D8 Core on the same version of PHP, and many contributed modules will work.&nbsp; But install enough contributed modules, and you're likely to find an issue.&nbsp;</p>\r\n",
+                "summary": "A PHP upgrade might be required/desired for various reasons, including functionality, performance, and security.  But what happens to Drupal when PHP is upgraded? ",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1529351305",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "54",
+                "alt": "PHP logo",
+                "title": "",
+                "width": "256",
+                "height": "256",
+                "url": "/sites/default/files/2018-06/PHP.png",
+                "filename": "PHP.png",
+                "filesize": "37215",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2018-06-18"
+            },
+            "field_tags": [
+                {
+                    "target_id": "25",
+                    "term_name": "php",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "26",
+                    "term_name": "d7",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "17",
+                    "term_name": "D8",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "27",
+                    "term_name": "ldap",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "28",
+                    "term_name": "httprl",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "29",
+                    "term_name": "boost",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "46",
+        "uuid": "49b8991a-ac66-4d16-85ee-5341d42678d2",
+        "title": "Installing MongoDB on Red Hat Linux 7",
+        "type": "article",
+        "created": "2018-06-29T09:39:09-04:00",
+        "changed": "2019-08-02T16:06:57-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "235"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564776417"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/installing-mongodb-red-hat-linux-7",
+                "pid": "55",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I'm a little bit fascinated by the idea of a no-SQL database.&nbsp; It seems completely counter-intuitive to everything I learned of systems and database design in the early 2000's.&nbsp; But technology is nothing if not fluid and perpetually redefining the rules.&nbsp;</p>\r\n\r\n<p>I learned that Drupal could use MongoDB as its backend database, and this solidified my desire to find out more.&nbsp; While taking courses at <a href=\"https://university.mongodb.com\">MongoDB University</a> was a natural starting point, I also wanted to understand the install and configuration of MongoDB.&nbsp; But it's rare to find an online article or instruction set that I can follow from beginning to end, especially when working with a product I've never installed, configured or used.&nbsp;</p>\r\n\r\n<p>Here's what it took for me to get MongoDB installed and running on my RHEL7 server...</p>\r\n\r\n<blockquote>\r\n<p>But when you know it's going to take three days to get a response from the Network guy, you simply move on...</p>\r\n</blockquote>\r\n\r\n<p>I began with the <a href=\"https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/\">Red Hat installation instructions</a> available on the MongoDB website, and this article provided the majority of what I needed.&nbsp; However, for reasons I did not research further, the recommended installation process of creating a new repository and installing through <strong>yum </strong>simply didn't work for me (I <em>can </em><strong>yum install</strong> other packages).&nbsp; I suspect the problem is something unique to my development server, combined with the fact that I'm behind a firewall, and there are&nbsp;rules for talking to repositories.&nbsp; But when you know it's going to take three days to get a response from the Network guy, you simply move on...&nbsp;</p>\r\n\r\n<p>Fortunately, the article also included instructions for using the tarball.&nbsp; And the instructions are <em>pretty </em>good, but a few details are, perhaps, assumed by a writer comfortable with the process.&nbsp; A first-time installer might want to know this:</p>\r\n\r\n<ol>\r\n\t<li>You have to create your own .conf file.&nbsp; You might think this comes with the tarball (I did!).&nbsp; It does not.&nbsp; Nor does Mongo's instructions specify the manual creation of this file or give full details about its contents.</li>\r\n\t<li>You have to create your own data file and logging directories and change ownership of those directories (see step #3).</li>\r\n\t<li>You have to create a new OS account named 'mongod,' and this account must own the directories created in step #2.</li>\r\n\t<li>Depending on how you want to stop/start MongoDB, there may be other steps specific to your Linux environment.&nbsp; For example, using <em>service &lt;service name&gt; start/stop, </em>which is what the article instructs, does not work unless you've created the service file in /etc/systemd/system/.&nbsp; It doesn't just happen automatically.</li>\r\n</ol>\r\n\r\n<p>Because these details weren't clear, I used <a href=\"http://jerwinroy.blogspot.com/2015/02/mongodb.html\">this article</a> for the more granular steps.&nbsp; This is an older article, likely written for an older version of MongoDB, and the data and logging paths referenced in this article are different from the current MongoDB defaults.&nbsp; But here I was able to find a sample .conf file.&nbsp; I also found instructions for starting MondoDB - and the interactive command line tool - from the Mongo source/installation location.&nbsp;</p>\r\n\r\n<p>And... it works!!</p>\r\n\r\n<p>Here's a snippet of the command line tool and the help menu.&nbsp; Now to start playing!&nbsp;</p>\r\n\r\n<p><img alt=\"Mongo command line snip\" data-entity-type=\"file\" data-entity-uuid=\"cdbe9aff-dc25-4dc7-b8af-b8d84b6f90c9\" src=\"/sites/default/files/inline-images/Mongosnip.PNG\" /></p>\r\n",
+                "summary": "Technology is nothing if not fluid and perpetually redefining the rules. ",
+                "format": "basic_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1530280653",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "56",
+                "alt": "mongodb logo",
+                "title": "",
+                "width": "200",
+                "height": "234",
+                "url": "/sites/default/files/2018-06/Mongo.png",
+                "filename": "Mongo.png",
+                "filesize": "32788",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2018-06-29"
+            },
+            "field_tags": [
+                {
+                    "target_id": "30",
+                    "term_name": "rhel7",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "31",
+                    "term_name": "red hat",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "32",
+                    "term_name": "mongodb",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "33",
+                    "term_name": "install",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "50",
+        "uuid": "aa731db7-6619-419f-85eb-e4529ee40b27",
+        "title": "Drupal 8 - Entity Reference View to Display User Profile Values",
+        "type": "article",
+        "created": "2019-01-31T10:16:44-05:00",
+        "changed": "2019-08-01T12:54:40-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "197"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1564678480"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-8-entity-reference-view-display-user-profile-values",
+                "pid": "70",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Use case:&nbsp; I have a custom entity, <strong>Department</strong>.&nbsp; I have another custom entity, <strong>Unit</strong>.&nbsp; These entities are related to one another such that Units belong to Departments, and the Unit <em>src/Entity/Unit.php</em> file contains an entity reference field to Department.&nbsp; So, I may have a Department named 'Information Technology,' and within that Department are Units named 'Integration' and 'Application Support.'&nbsp; It is a parent-child, one-to-many relationship.</p>\r\n\r\n<p>Department is also a field that is assigned to User accounts.&nbsp; In the User account, this is field is named 'Manage Departments' (field_manage_department). &nbsp; When I add a <strong>User</strong>, I select one or more Departments that this User manages.&nbsp; To visually demonstrate the relationship, I have created the below table:</p>\r\n\r\n<table align=\"left\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" height=\"79\" summary=\"User Department Unit relationship\" width=\"578\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 133px;\">&nbsp;</td>\r\n\t\t\t<td style=\"width: 195px;\"><strong>User A</strong></td>\r\n\t\t\t<td style=\"width: 232px;\"><strong>User B</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 133px;\">\r\n\t\t\t<p><strong>Department</strong></p>\r\n\r\n\t\t\t<ul>\r\n\t\t\t\t<li><strong>Unit</strong></li>\r\n\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 195px;\">Information Technology\r\n\t\t\t<ul>\r\n\t\t\t\t<li>Integration</li>\r\n\t\t\t\t<li>App Support</li>\r\n\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 232px;\">\r\n\t\t\t<p>Finance</p>\r\n\r\n\t\t\t<ul>\r\n\t\t\t\t<li>Accounts Payable</li>\r\n\t\t\t\t<li>Accounts Receivable</li>\r\n\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td style=\"width: 133px;\">\r\n\t\t\t<p><strong>Department</strong></p>\r\n\r\n\t\t\t<ul>\r\n\t\t\t\t<li><strong>Unit</strong></li>\r\n\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t\t<td style=\"width: 195px;\">&nbsp;</td>\r\n\t\t\t<td style=\"width: 232px;\">\r\n\t\t\t<p>Human Resources</p>\r\n\r\n\t\t\t<ul>\r\n\t\t\t\t<li>Recruitment</li>\r\n\t\t\t\t<li>Benefits</li>\r\n\t\t\t</ul>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Let's say that Users have the ability to create new Units, but we don't want them to be able to select a Department that they don't have access to (one that is <em>not </em>assigned to them in their profile).&nbsp; If User A needs to add a new Unit to the Information Technology department, we don't want the Add Unit form to allow User A to select Finance or Human Resources.&nbsp;</p>\r\n\r\n<p>There may be many ways to accomplish this level of security, but one way is through an Entity Reference view that is then used as the Handler for the Department field in <em>src/Entity/Unit.php.</em></p>\r\n\r\n<p>I created an Entity Reference view of content Department.&nbsp; The only field I added was the Department name, and I sorted ASC on the name.&nbsp; I knew I needed some type of Relationship to the User, but the key was choosing the correct Relationship. Rather than choosing the relationship User, I chose <strong>User using field_manage_department </strong>and required the relationship<strong>:</strong></p>\r\n\r\n<p><img alt=\"View relationship\" data-entity-type=\"file\" data-entity-uuid=\"2aa525b9-c277-4413-8f11-6cb616b33834\" src=\"/sites/default/files/inline-images/Relationship_0.PNG\" /></p>\r\n\r\n<p>I then added Filter criteria for Current User from the relationship:</p>\r\n\r\n<p><img alt=\"filter\" data-entity-type=\"file\" data-entity-uuid=\"c545331f-664a-4c82-9b20-84861ab8da3a\" src=\"/sites/default/files/inline-images/filter.PNG\" /></p>\r\n\r\n<p>Here is a full screenshot of the View.&nbsp; This returned a list of only the Departments that the current user has access to.</p>\r\n\r\n<p><em><strong>NOTE:</strong> The Departments in the next two screenshots are different from the examples we used above, but you get the idea...</em></p>\r\n\r\n<p><img alt=\"Full View\" data-entity-type=\"file\" data-entity-uuid=\"d5a5dc1e-022c-4bb8-b031-025e57b22c32\" src=\"/sites/default/files/inline-images/full_view.PNG\" /></p>\r\n\r\n<p>Here is the User profile, which got a little help from the <a href=\"https://www.drupal.org/project/multiselect\">Multiselect Module</a>:</p>\r\n\r\n<p><img alt=\"user account \" data-entity-type=\"file\" data-entity-uuid=\"d9fe3386-c8df-427e-86c9-2a4f4dfedd94\" src=\"/sites/default/files/inline-images/user_account.PNG\" /></p>\r\n\r\n<p>Then the entity file was adjusted as such:</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">$fields['departmentid'] = BaseFieldDefinition::create('entity_reference')\r\n      -&gt;setLabel(t('Department'))\r\n      -&gt;setDescription(t('Specify a department'))\r\n      -&gt;setSetting('target_type', 'timeoff_department')\r\n      -&gt;setSetting('handler', 'views')\r\n      -&gt;setSetting('handler_settings', ['view' =&gt;\r\n                                        ['view_name' =&gt;'filtered_departments',\r\n                                         'display_name' =&gt;'entity_reference_1',\r\n                                         'arguments' =&gt; []\r\n                                          ]\r\n                                   ])  \r\n      -&gt;setDisplayOptions('view', array(\r\n       'label' =&gt; 'above',\r\n       'type' =&gt; 'string',\r\n       'weight' =&gt; -3,\r\n      ))\r\n      -&gt;setDisplayOptions('form', array(\r\n       'type' =&gt; 'options_select',\r\n       'weight' =&gt; -3\r\n      ))\r\n      -&gt;setDisplayConfigurable('form', TRUE)\r\n      -&gt;setDisplayConfigurable('view', TRUE)\r\n      -&gt;setRequired(TRUE);</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "There may be many ways to accomplish this level of security, but one way is through an Entity Reference view... ",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1548949016",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "69",
+                "alt": "Entity reference view",
+                "title": "",
+                "width": "196",
+                "height": "189",
+                "url": "/sites/default/files/2019-01/entity_reference_view.PNG",
+                "filename": "entity_reference_view.PNG",
+                "filesize": "18777",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2019-01-31"
+            },
+            "field_tags": [
+                {
+                    "target_id": "35",
+                    "term_name": "view",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "36",
+                    "term_name": "entity reference",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "37",
+                    "term_name": "drupal 8",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "17",
+                    "term_name": "D8",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "51",
+        "uuid": "bb016330-e307-47ae-b5cc-ea29c58145f4",
+        "title": "Drupal 8 - Selective Deletion from Watchdog Table",
+        "type": "article",
+        "created": "2019-05-13T09:19:24-04:00",
+        "changed": "2021-11-05T09:18:22-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "292"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1636118302"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-8-selective-deletion-watchdog-table",
+                "pid": "71",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I support a Drupal 8 implementation that has specific logging needs.&nbsp; Much of the site functionality comes from&nbsp;custom modules, and various actions taken by these modules must be logged.&nbsp; I accomplished this by using Drupal's dblog feature to write custom messages to the watchdog table.&nbsp; This is great, because I have control over the message that is written, and the logs are available within the UI for anyone who needs them.&nbsp; But due to the requirements of the site, these custom messages in watchdog must be kept for a long time, potentially for the life of the site.&nbsp; In order to keep watchdog from becoming too large, certain messages need to be removed on a regular basis&nbsp;without removing the important messages.</p>\r\n\r\n<p>Out of the box, dblog only gives you a predefined set of options for the number of messages to keep in the database log.&nbsp; Even though one of those options is 1,000,000, that still doesn't fit my use case.&nbsp; I'm stuck with setting the option to 'All.'&nbsp;&nbsp;</p>\r\n\r\n<p>Drush offers some methods for selectively removing certain entries from watchdog, but the options are not specific enough for my needs.</p>\r\n\r\n<p>For this site, the best way to tackle a rapidly-growing&nbsp;WATCHDOG table&nbsp;was with SQL.&nbsp;</p>\r\n\r\n<p>I went through each of the log types and messages and determined what could be removed through SQL <code>DELETE FROM</code> statements.&nbsp; Below are the statements and the justification I use to prune watchdog without removing the messages I need.&nbsp; Once my <code>DELETE</code> statements were written, I put them in a text file on my database server.&nbsp; I then wrote a shell script to connect to MySQL and execute the statements from the text file.&nbsp; Finally, I schedule the shell script to run through cron once per week.&nbsp;</p>\r\n\r\n<p>Although watchdog will continue to grow, this method allows me to keep it manageable without sacrificing my logging needs.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<pre>\r\n<code class=\"language-sql\">// In my site, 403 and 404 errors are very infrequent.  I review them in the admin/reports about once per week, and then they are removed.\r\ndelete from watchdog where type='page not found';\r\ndelete from watchdog where type='access denied';\r\n\r\n//Only my admin account creates and updates blocks, menus, nodes, views, and taxonomy.  With webforms, I already have the submission data available in another table and in the UI, so I don't need to keep the log entries from these events\r\ndelete from watchdog where type='block';\r\ndelete from watchdog where type='block_content';\r\ndelete from watchdog where type='menu';\r\ndelete from watchdog where type='node';\r\ndelete from watchdog where type='taxonomy';\r\ndelete from watchdog where type='views';\r\ndelete from watchdog where type='webform';\r\n\r\n//Cron runs every minute, and it writes an entry to watchdog every time.  Three weeks of cron runs added over 34,000 entries to my watchdog table, and I don't need any of them long-term.  \r\ndelete from watchdog where type='cron';\r\n\r\n//Ultimate cron does some routine maintenance, but the information it writes to watchdog is not critical for my purposes. \r\ndelete from watchdog where type='ultimate_cron_lock';\r\n\r\n//Addtional cron maintenance information that I don't need to keep.\r\ndelete from watchdog where type='database_logger';\r\n\r\n//I have a custom cron job that runs on a regular basis and writes an entry to watchdog each time. Aside from having to troubleshoot the most recent run of this job, the entries are not needed. \r\ndelete from watchdog where message like 'The cron job for Timeoff Leave Type has started%';\r\n\r\n// LDAP does some checks against our active directory, but only for authentication.  Possibly, adjusting the LDAP module settings would eliminate these entries.\r\ndelete from watchdog where type like 'ldap%';\r\n\r\n// In the event that I need to troubleshoot a sent message, I keep the entries from the Contact module for a while.  However, these messages are emailed and exist in other places if advanced research is necessary.  I keep 30 days worth of them.\r\ndelete from watchdog where type='contact' and from_unixtime(`timestamp`) &lt; date_sub(now(), interval 30 day);\r\n\r\n// Feeds were used in the early stages of the site during a time when data migration was happening.  Feeds are still occasionally used, but I don't need logs long-term.  I keep 30 days worth.\r\ndelete from watchdog where type like 'feeds%' and from_unixtime(`timestamp`) &lt; date_sub(now(), interval 30 day);\r\n\r\n// The entries for type 'form' may be useful in some cases, but I have not found any use for them in this particular site\r\ndelete from watchdog where type='form';\r\n\r\n// The entries for type 'php' can be important for troubleshooting; however, a few of the contributed modules I'm using write an abundance of php warnings and notices to the watchdog table.  In this case, I keep anything with a severity level of an error or worse (0-3) for 6 months and remove everything else after 1 week.\r\ndelete from watchdog where type='php' and severity &gt; 3 and from_unixtime(`timestamp`) &lt; date_sub(now(), interval 7 day);\r\ndelete from watchdog where type='php' and severity &lt; 4 and from_unixtime(`timestamp`) &lt; date_sub(now(), interval 6 month);\r\n\r\n// For my site, the only entries of type 'system' are related to module installs and uninstalls.  I don't keep any of these logs.\r\ndelete from watchdog where type='system';\r\n\r\n// I keep the type 'user' entries primarily for information about failed login attempts, but I only keep 30 days worth.\r\ndelete from watchdog where type='user' and from_unixtime(`timestamp`) &lt; date_sub(now(), interval 30 day);\r\n\r\n</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "For this site, the best way to tackle a rapidly-growing WATCHDOG table was with SQL.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1557755446",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "70",
+                "alt": "Database icon",
+                "title": "",
+                "width": "2174",
+                "height": "2400",
+                "url": "/sites/default/files/2019-05/database.png",
+                "filename": "database.png",
+                "filesize": "361475",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2019-05-13"
+            },
+            "field_tags": {
+                "target_id": "38",
+                "term_name": "watchdog dblog",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "53",
+        "uuid": "a8b36377-83e5-43fa-be26-2a85435fb843",
+        "title": "Deciding to Accept Composer",
+        "type": "article",
+        "created": "2019-08-01T12:29:12-04:00",
+        "changed": "2019-08-19T12:13:46-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "241"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1566231226"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/deciding-accept-composer",
+                "pid": "73",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span><span><span>When it comes to Composer adoption, I admit, I’ve been procrastinating.&nbsp; And by <em>procrastinating</em>, I mean <em>completely ignoring</em> my composer.json file and all that it stands for.&nbsp; Until now.&nbsp;</span></span></span></p>\r\n\r\n<p><span><span><span>Why the change of heart?&nbsp; For me, using Composer has been analogous to washing the windows in my house.&nbsp; I know I need to do it, but maybe not today.&nbsp; And truthfully, I might have languished in my cozy, outdated ways, had it not been for a job interview packed with Composer questions I simply couldn’t answer.&nbsp; (Try talking intelligently about a tool you’ve pretended doesn’t exist for the past several years.&nbsp; It’s humbling.)</span></span></span></p>\r\n\r\n<p><span><span><span>But admitting I needed Composer in my life was only the first, tiny step.&nbsp; </span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2><span><span><span><span><span>The Situation</span></span></span></span></span></h2>\r\n\r\n<p><span><span><span>I had a Drupal 8 site that was installed with Composer in its development environment days but was later maintained the old-fashioned, tarball way.&nbsp; And the site’s CLI tools were all problematic. &nbsp;Drupal Console threw “Invalid command name” errors, Drush couldn’t find “Config\\Environment,” and Composer itself was perpetually “not autoloadable.”&nbsp; </span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2><span><span><span><span><span>The Plan</span></span></span></span></span></h2>\r\n\r\n<ul>\r\n\t<li><span><span><span>Use a tool like one of these to auto-generate a composer.json file from my existing project:&nbsp;&nbsp; </span></span></span><br />\r\n\t<span><span><span><a href=\"https://www.drupal.org/project/composerize\">https://www.drupal.org/project/composerize</a></span></span></span><br />\r\n\t<span><span><span><a href=\"https://github.com/grasmash/composerize-drupal\">https://github.com/grasmash/composerize-drupal</a></span></span></span><br />\r\n\t&nbsp;</li>\r\n\t<li><span><span><span>Fix the CLI tools by researching the errors and following the trails.</span></span></span></li>\r\n</ul>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2><span><span><span><span><span>Why the Plan Failed</span></span></span></span></span></h2>\r\n\r\n<blockquote>\r\n<p>I had 48 browser tabs open, 10 of them were on the same article, and I was seriously considering a career change.</p>\r\n</blockquote>\r\n\r\n<p><span><span><span>The problem with my plan was #1 – not knowing where to start, and #2 – treating my CLI tool errors as separate, unrelated issues.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>Starting with one of the above composerize-tools seemed like a quick and easy solution, but neither tool worked for me.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>The Composerize Module promised to provide a composer.json file under admin/reports, but the report never worked; it just complained that the LDAP module didn’t exist.&nbsp; (LDAP most certainly did exist and was configured and working, along with twenty-some other contributed modules.&nbsp; Why balk about LDAP only?)</span></span></span></p>\r\n\r\n<p><span><span><span>The Comperserize Plugin couldn’t detect my Drupal core version, despite providing it with the full path to Drupal.&nbsp; And besides, needing to use Composer in order to fix Composer is… well, ironic.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>It was beginning to look like it would take more time to troubleshoot these ‘quick start’ tools than it would to actually write a composer.json file by hand.&nbsp; So, I determined a manual file was the way to go, and I switched gears to begin investigating the CLI tool errors.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>However, error chasing led me down a rabbit hole of endless depth.&nbsp; At some point, I realized I’d made too many changes to backtrack, and still, nothing was working the way it should.&nbsp; I had 48 browser tabs open, 10 of them were on the same article, and I was seriously considering a career change.</span></span></span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2><span><span><span><span><span>The Actual Plan</span></span></span></span></span></h2>\r\n\r\n<p><span><span><span>There was one theme that kept emerging throughout the Drupal/Composer forums:&nbsp; Drupal had only half-heartedly accepted Composer, and there were repos out there – like the core tarball on Drupal.org -&nbsp; that didn’t truly support Composer.&nbsp; There was also a consensus that the standard for Composer-based Drupal sites was the <a href=\"https://github.com/drupal-composer/drupal-project\">drupal-composer/drupal-project repo</a>.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>My base project was <a href=\"https://packagist.org/packages/drupal/drupal\">drupal/drupal</a>, which I read was a deprecated repo that could not be used with Composer.&nbsp; Additionally, my project structure was confusing, with two sets of core files, one set that was used and updated when core received a patch, and another that… did nothing??&nbsp; If Drush and Drupal Console weren't working, perhaps it was because my entire project was a non-standard mess.&nbsp;</span></span></span></p>\r\n\r\n<p><span><span><span>I had to start over. &nbsp;&nbsp;</span></span></span></p>\r\n\r\n<p><span><span><span>Thanks to an incredibly helpful and informative article by Jeff Geerling, the process wasn’t as bad as I thought. <a href=\"https://www.jeffgeerling.com/blog/2018/converting-non-composer-drupal-codebase-use-composer\">https://www.jeffgeerling.com/blog/2018/converting-non-composer-drupal-codebase-use-composer</a>&nbsp;&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>Additionally, I removed any previously-downloaded composer installation files, and looked to this article to start over with installation at the server level:&nbsp;</span></span></span><a href=\"https://getcomposer.org/download/\">https://getcomposer.org/download/</a></p>\r\n\r\n<p><span><span><span>I deviated from the author’s instructions in that I created a new project in a new directory, while leaving my original project intact for reference.&nbsp; Later, after I was satisfied that everything was copied, I deleted the original project directory and renamed my new directory to mimic the old one.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>During the process, I manually typed my ‘require’ statements for contributed modules and confirmed that Composer was writing them to composer.json.&nbsp; I copied all custom modules and themes from my original project to the new one.&nbsp;&nbsp; There wasn’t any information in the article about settings.php or the sites/default/files directory. &nbsp;But since I already had a database, and files/images I wanted to keep, I manually copied those to my new project folder.</span></span></span></p>\r\n\r\n<p><span><span><span>I navigated to my new site in a browser, and… Server 500 error.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>There some weird module-related errors that I was able to get around by removing the modules (<em>composer remove</em>), clearing the cache (Drush now worked!), and then again requiring the modules (<em>composer require</em>).</span></span></span></p>\r\n\r\n<p><span><span><span>After that, I needed to apply any core and module patches (<strong>diff</strong> patches like this one - <span><span><span>https://www.drupal.org/files/issues/2019-06-25/1699378-188.patch</span></span></span>).&nbsp; Using <a href=\"https://github.com/drupal-composer/drupal-project#how-can-i-apply-patches-to-downloaded-modules\">these instructions</a>, I manually added the patch requirements to composer.json.&nbsp; Perhaps there’s a CLI way to do this, but at the time, I wasn’t aware of any.</span></span></span></p>\r\n\r\n<p><span><span><span>Unlike <em>composer require</em>, which both updates composer.json and downloads/moves module code to the appropriate directory, manually typing something into composer.json doesn’t execute or change anything.&nbsp; Changes are activated when <em>composer update</em> (or <em>composer install</em>) is run against a site.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>Similarly, executing the <em>composer update/install</em> command doesn’t do the Drupal stuff, like enabling the modules, or running update.php.&nbsp; These steps still must be done separately.&nbsp; And that’s where I ran into another gotcha…</span></span></span></p>\r\n\r\n<p><span><span><span>My project already had a database.&nbsp; It was connected to my newly-composerized site when I copied settings.php.&nbsp; Within that database, all the modules I “required” through Composer were already enabled/installed.&nbsp; Great!&nbsp; That was a time saver – I didn’t have to manually enable things and run update.php.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>Except that when I ran <em>composer update</em>, newer versions of the Webforms and Business Rules modules were downloaded.&nbsp; But <em>composer update</em> did so many things, it wasn’t super-obvious to me that there were module updates – and here’s the key – <strong>with database changes</strong>.&nbsp; So, when my site blew up again with Webform-related errors, I was initially stumped.&nbsp; Following the error trail, I discovered a missing database table, and on a hunch, I ran update.php.&nbsp; Problem solved.&nbsp; </span></span></span></p>\r\n\r\n<hr class=\"style-mint\" />\r\n<p><span><span><span>This process made me realize that doing things the Composer Way is a paradigm shift for many of us.&nbsp; Years of downloading module tarballs, FTPing to a server, enabling through the UI, and running update.php in browser can teach one’s brain to think in a certain way, to follow a narrow path, and to want to stay on that path.&nbsp; But going forward, the nuances of Composer and the changes to my workflow are something I must accept and embrace.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>Maybe I’ll go home and wash those windows.</span></span></span></p>\r\n",
+                "summary": "When it comes to Composer adoption, I admit, I’ve been procrastinating.  And by procrastinating, I mean completely ignoring my composer.json file and all that it stands for. ",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1564676962",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": {
+                "value": "I had 48 browser tabs open, 10 of them were on the same article, and I was seriously considering a career change."
+            },
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "94",
+                "alt": "composer logo",
+                "title": "",
+                "width": "300",
+                "height": "356",
+                "url": "/sites/default/files/2019-08/composer.png",
+                "filename": "composer.png",
+                "filesize": "108943",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2019-08-01"
+            },
+            "field_tags": [
+                {
+                    "target_id": "39",
+                    "term_name": "composer",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "40",
+                    "term_name": "drush",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "41",
+                    "term_name": "drupal console",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "54",
+        "uuid": "ac71cc20-e3dc-4563-9cb3-f4aa354a1746",
+        "title": "Drupal 8 - Twig Templates for Bootstrap Forms",
+        "type": "article",
+        "created": "2019-08-02T16:15:31-04:00",
+        "changed": "2021-11-05T09:16:23-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "291"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1636118183"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/twig-bootstrap",
+                "pid": "74",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>One of my first major Drupal 8 projects required a good bit of custom theming due to a) designing a custom administrative theme, and b) working with custom entity types.&nbsp; Because the site contained multiple forms, making them look nice was important to the project.&nbsp; Using a Bootstrap base, I themed the forms to create nicely-positioned elements with inline labels.&nbsp;</p>\r\n\r\n<p>I started by copying the following Twig templates from core into my theme:<br />\r\ncore/themes/classy/templates/form/form.html.twig<br />\r\ncore/themes/classy/templates/form/form-element.html.twig</p>\r\n\r\n<p>I initially modified <code>form.html.twig</code> to wrap all forms in a Bootstrap class that limited the form to a width of 66%.&nbsp; Depending on the implementation, this may not be a desired format, but I found that my forms looked better when they didn't naturally span 100% of their area.&nbsp;</p>\r\n\r\n<p>However, I later removed the wrapper after discovering that it also applied to View results, which I did not want.</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">{#\r\n/**\r\n * @file\r\n * Default theme implementation for a 'form' element.\r\n *\r\n * Available variables\r\n * - attributes: A list of HTML attributes for the wrapper element.\r\n * - children: The child elements of the form.\r\n *\r\n * @see template_preprocess_form()\r\n *\r\n * @ingroup themeable\r\n */\r\n#}\r\n\r\n/*\r\n* Add Bootstrap class col-lg-8 to limit form width to 66%  \r\n*/\r\n\r\n&lt;div class=\"col-lg-8\"&gt;\r\n&lt;form{{ attributes }}&gt;\r\n  {{ children }}\r\n&lt;/form&gt;\r\n&lt;/div&gt;</code></pre>\r\n\r\n<p>So <code>form.html.twig</code> was reverted to the original code:</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">{#\r\n/**\r\n * @file\r\n * Default theme implementation for a 'form' element.\r\n *\r\n * Available variables\r\n * - attributes: A list of HTML attributes for the wrapper element.\r\n * - children: The child elements of the form.\r\n *\r\n * @see template_preprocess_form()\r\n *\r\n * @ingroup themeable\r\n */\r\n#}\r\n\r\n&lt;form{{ attributes }}&gt;\r\n  {{ children }}\r\n&lt;/form&gt;</code></pre>\r\n\r\n<p>I still didn't want my forms spanning 100%, so in addition to other changes, I implemented the Bootrap wrapper in <code>form-element.html.twig</code>.&nbsp; Additional changes included: setting classes at the element level, changing the Description font size and color, and <code>float</code> and <code>width</code> adjustments to <code>labels</code> and <code>input</code> elements.</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">{%\r\n  set classes = [\r\n    'js-form-item',\r\n    'form-item',\r\n    'col-lg-8',\r\n    'js-form-type-' ~ type|clean_class,\r\n    'form-type-' ~ type|clean_class,\r\n    'js-form-item-' ~ name|clean_class,\r\n    'form-item-' ~ name|clean_class,\r\n    \r\n    disabled == 'disabled' ? 'form-disabled',\r\n    errors ? 'form-item--error',\r\n  ]\r\n%}\r\n{%\r\n  set description_classes = [\r\n    'description',\r\n    'f-s-12',\r\n    'text-grey-darker',\r\n    description_display == 'invisible' ? 'visually-hidden',\r\n  ]\r\n%}\r\n&lt;div{{ attributes.addClass(classes) }}&gt;\r\n  &lt;div class=\"form-group row\"&gt;\r\n    &lt;div class=\"col-form-label col-md-3\"&gt;\r\n      {% if label_display in ['before', 'invisible'] %}\r\n        {{ label }}\r\n      {% endif %}\r\n    &lt;/div&gt;\r\n    &lt;div class=\"col-md-9\"&gt;    \r\n      {% if prefix is not empty %}\r\n        &lt;span class=\"field-prefix\"&gt;{{ prefix }}&lt;/span&gt;\r\n      {% endif %}  \r\n      {% if description_display == 'before' and description.content %}\r\n        &lt;div{{ description.attributes }}&gt;\r\n          {{ description.content }}\r\n        &lt;/div&gt;\r\n      {% endif %}\r\n      {{ children }}\r\n      {% if suffix is not empty %}\r\n        &lt;span class=\"field-suffix\"&gt;{{ suffix }}&lt;/span&gt;\r\n      {% endif %}\r\n      {% if label_display == 'after' %}\r\n        {{ label }}\r\n      {% endif %}\r\n      {% if errors %}\r\n        &lt;div class=\"form-item--error-message\"&gt;\r\n          &lt;strong&gt;{{ errors }}&lt;/strong&gt;\r\n        &lt;/div&gt;\r\n      {% endif %}\r\n      {% if description_display in ['after', 'invisible'] and description.content %}\r\n        &lt;div{{ description.attributes.addClass(description_classes) }}&gt;\r\n          {{ description.content }}\r\n        &lt;/div&gt;\r\n      {% endif %}\r\n    &lt;/div&gt;  \r\n  &lt;/div&gt;\r\n&lt;/div&gt;\r\n</code></pre>\r\n\r\n<p>I also themed the Submit button, <code>input--submit.html.twig</code>,&nbsp; using some Bootstrap classes for size and positioning:</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">{#\r\n/**\r\n * @file\r\n * Theme suggestion for \"button\" input form element.\r\n *\r\n * Available variables:\r\n * - attributes: A list of HTML attributes for the input element.\r\n * - children: Optional additional rendered elements.\r\n * - icon: An icon.\r\n * - icon_only: Flag to display only the icon and not the label.\r\n * - icon_position: Where an icon should be displayed.\r\n * - label: button label.\r\n * - prefix: Markup to display before the input element.\r\n * - suffix: Markup to display after the input element.\r\n * - type: The type of input.\r\n *\r\n * @ingroup templates\r\n *\r\n * @see \\Drupal\\bootstrap\\Plugin\\Preprocess\\InputButton\r\n * @see \\Drupal\\bootstrap\\Plugin\\Preprocess\\Input\r\n * @see template_preprocess_input()\r\n */\r\n#}\r\n{% spaceless %}\r\n    {%\r\n        set classes = [\r\n        'btn', 'btn-150', 'btn-sm', 'btn-success', 'm-r-5', 'm-b-10', 'm-t-10', 'm-l-10',\r\n        type == 'submit' ? 'js-form-submit',\r\n        icon and icon_position and not icon_only ? 'icon-' ~ icon_position,\r\n    ]\r\n    %}\r\n    &lt;div class=\"form-group row m-b-16\"&gt;\r\n    \t&lt;div class=\"col-form-label col-md-2\"&gt;\r\n\t      \r\n    \t&lt;/div&gt;\r\n    \t&lt;div class=\"col-md-9\"&gt;    \r\n\t\t    &lt;input {{ attributes.addClass(classes) }} /&gt;\r\n\t\t    {{ children }}\r\n\t\t&lt;/div&gt;\r\n\t&lt;/div&gt;\t    \r\n{% endspaceless %}</code></pre>\r\n\r\n<p>The end result:</p>\r\n\r\n<p><img alt=\"Form example\" data-entity-type=\"file\" data-entity-uuid=\"08f789f1-1511-494f-ba11-d6a9726b510f\" src=\"/sites/default/files/inline-images/twig1.PNG\" /></p>\r\n\r\n<p><img alt=\"Form example\" data-entity-type=\"file\" data-entity-uuid=\"558360de-0b76-4e83-bb18-78367ed86745\" src=\"/sites/default/files/inline-images/Twig2.PNG\" /></p>\r\n",
+                "summary": "Drupal 8 -- Theming --Twig Templates",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1564776931",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "95",
+                "alt": "twig logo",
+                "title": "",
+                "width": "200",
+                "height": "202",
+                "url": "/sites/default/files/2019-08/twig.png",
+                "filename": "twig.png",
+                "filesize": "11592",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2018-10-19"
+            },
+            "field_tags": [
+                {
+                    "target_id": "42",
+                    "term_name": "twig",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "43",
+                    "term_name": "bootstrap",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "44",
+                    "term_name": "template",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "45",
+                    "term_name": "theme",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "56",
+        "uuid": "a422e3b4-af83-43aa-9c5d-1c40b90703d3",
+        "title": "Creating Your \"Modules Portfolio\"",
+        "type": "article",
+        "created": "2019-10-16T11:32:17-04:00",
+        "changed": "2019-10-22T14:18:51-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "260"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1571768331"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/creating-your-modules-portfolio",
+                "pid": "76",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>There are a ba-zillion contributed modules for Drupal that handle just about any common task you can imagine.&nbsp;&nbsp;Some modules are familiar to all of us - everyone's used&nbsp;<a href=\"https://www.drupal.org/project/pathauto\">Pathauto</a> and <a href=\"https://www.drupal.org/project/vbo\">Views Bulk Operations</a>, right?&nbsp; &nbsp;But there is also a wealth&nbsp;of niche, lesser-known modules you may have worked with&nbsp;- think <a href=\"https://www.drupal.org/project/office_hours\">Office Hours</a>&nbsp;for adding business hours to an entity, <a href=\"https://www.drupal.org/project/merci\">Merci </a>for equipment reservations, or <a href=\"https://www.drupal.org/project/genpass\">Generate Password</a>&nbsp;to auto-populate the user account password (helpful when authenticating via LDAP).&nbsp;</p>\r\n\r\n<p>When you're documenting&nbsp;your own Drupal experience, or talking to other developers about theirs, you may realize you&nbsp;have more experience or preference for one module versus another for a similar task.&nbsp; For example, you may have worked extensively with <a href=\"https://www.drupal.org/project/feeds\">Feeds</a>&nbsp;for moving data about, but not as much&nbsp;with <a href=\"https://www.drupal.org/project/migrate\">Migrate</a>, and not at all with <a href=\"https://www.drupal.org/project/features\">Features</a>.</p>\r\n\r\n<p>So&nbsp;after years of building Drupal sites and leveraging dozens of contributed modules, how do you keep track of what you've used and why?&nbsp;&nbsp;</p>\r\n\r\n<p>A while back, I began keeping a list of contributed modules I've installed and used in my Drupal sites.&nbsp; I admit this was a manual process of updating an Excel spreadsheet each time I installed something new, but it became a part of my standard workflow, and it only took a minute to complete.&nbsp; My spreadsheet had&nbsp;columns for major version, name, and description.&nbsp; Not only was it a good reference for me, but other developers could quickly glance at it to see if a particular module was being used somewhere.&nbsp;&nbsp;</p>\r\n\r\n<p>Now, there are some good arguments against manually maintaining a&nbsp;spreadsheet.&nbsp; One, it's manual; nothing in the process is automated.&nbsp; Two, such a spreadsheet should never be used as a definitive list of modules (too much chance for human error).&nbsp; And three, obviously, Drush already provides this basic functionality through the <em>pm-list</em> command.&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p>But despite these drawbacks,&nbsp;here are some&nbsp;reasons&nbsp;why I continue to keep a manual list&nbsp;of modules I've used&nbsp;as a supplemental reference.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Retired sites</h2>\r\n\r\n<blockquote>\r\n<p>Guess what you can't do with a site that doesn't exist anymore?&nbsp; You can't run <em>drush pm-list</em> against it.&nbsp;&nbsp;</p>\r\n</blockquote>\r\n\r\n<p>If you've worked with Drupal for a long time, inevitably you've built sites that became irrelevant, were replaced with another technology,&nbsp;or simply weren't&nbsp;needed any longer.&nbsp; A great example of this is the <a href=\"https://www.fijiggle.com/drupal-sites/cloud-document-sharing-solution\">Cloud Document Sharing site</a> I developed many years ago.&nbsp; At the time, there was no easy way to share documents and version changes with resources outside of our organization.&nbsp; We experimented with different technologies, but nothing quite met our functional and security needs.&nbsp; However, a Drupal Site running <a href=\"https://www.drupal.org/project/filedepot\">File Depot</a>, <a href=\"https://www.drupal.org/project/og\">Organic Groups</a>, and other contributed modules provided exactly what we needed.&nbsp; <em>For a while.&nbsp; </em></p>\r\n\r\n<p>Eventually, Office 365 delivered all of those features through OneDrive, Teams, and Sharepoint on&nbsp;an enterprise-wide scale.&nbsp; So, the Cloud site was retired and ultimately removed.</p>\r\n\r\n<p>Guess what you can't do with a site that doesn't exist anymore?&nbsp; You can't run <em>drush pm-list</em> against it.&nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>No access to Drush/CLI&nbsp;</h2>\r\n\r\n<p>I know that some developers can't imagine this, but there are web servers that don't have Drush installed and hosts that don't offer command line access.&nbsp; Whether or not this is ideal doesn't matter.&nbsp; It happens.&nbsp;&nbsp;</p>\r\n\r\n<p>So, once again,&nbsp;<em>drush pm-list</em> is useless for getting a modules list.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Preferred fields/metadata</h2>\r\n\r\n<p>It's great to have a list of module names, but what about descriptions (the&nbsp;one-liner&nbsp;in the module info&nbsp;file that describes the module's purpose)?&nbsp; What if I want to record other information?&nbsp; What if I don't want sub-modules in the list (I want to see Webform, but not Webform UI)?&nbsp;</p>\r\n\r\n<p>At least&nbsp;as of today, Drush 9 doesn't appear capable of outputting a description or limiting the list to sub-modules.&nbsp; It looks like this was an option with the <em>pm-projectinfo</em> command in prior versions, but that's been deprecated in favor of <em>pm-list</em>.&nbsp; And, of course, none of these commands&nbsp;can&nbsp;add my personal notes or comments.&nbsp;&nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr class=\"style-mint\" />\r\n<h2>Conclusion</h2>\r\n\r\n<p>For now, I'm keeping my manual record, and I think other developers should, too!&nbsp; What better way to showcase the diversity and range of projects you've worked with?&nbsp; It can serve as a tool for your own reference, as well as prospective employers and clients.&nbsp;&nbsp;</p>\r\n\r\n<p>But...maybe it can be more a little more sophisticated than a Excel Spreadsheet.&nbsp; Maybe it can be content in your portfolio site.&nbsp; Maybe it can look something like this...</p>\r\n\r\n<p><a class=\"btn\" href=\"https://www.fijiggle.com/contributed-modules\">My Contributed Modules Portfolio</a></p>\r\n",
+                "summary": "After years of building Drupal sites and leveraging dozens of contributed modules, how do you keep track of what you've used and why? ",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1571239937",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": {
+                "value": "So, after years of building Drupal sites and leveraging dozens of contributed modules, how do you keep track of what you've used and why? "
+            },
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "103",
+                "alt": "Drupal logo",
+                "title": "",
+                "width": "400",
+                "height": "400",
+                "url": "/sites/default/files/2019-10/drupal.png",
+                "filename": "drupal.png",
+                "filesize": "32038",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2019-10-16"
+            },
+            "field_tags": [
+                {
+                    "target_id": "46",
+                    "term_name": "modules",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "40",
+                    "term_name": "drush",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "57",
+        "uuid": "9c539302-7669-422a-b2ea-89026d95fb88",
+        "title": "Strangers on the Beach (Revisited)",
+        "type": "article",
+        "created": "2021-08-10T08:37:35-04:00",
+        "changed": "2021-09-07T16:19:45-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "267"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1631045985"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/strangers-beach-revisited",
+                "pid": "78",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>In 2011 – a lifetime ago – we vacationed in North Carolina's Outer Banks, and during our daily&nbsp;beach visits, we started to feel <em>familiar</em> with the strangers around us.&nbsp; By the end of our trip, I was so intrigued by this sense of acquaintanceship, I wrote about it in my former blog.&nbsp; After this summer's Outer Banks trip, I remembered the blog post from 2011 and managed to find it in an old WordPress backup.&nbsp;</p>\r\n\r\n<p>I love the idea of making social connections in unexpected ways, and it seems appropriate to resurrect this nostalgic article.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr />\r\n<p>Hot breeze.&nbsp; Salty air.&nbsp; Sand, sun, and the sound of breaking waves.&nbsp; For seven days a year we get to enjoy these wonderful things.&nbsp; Seven out of three-hundred and sixty-five.&nbsp; For these seven days, we soak up every bit of pleasure the shore has to offer: the rolling waves, the warm water, the abundance of shells and other things washed ashore.&nbsp; But some of the best entertainment on the beach has nothing to do with the beach itself – it’s the people.<br />\r\n<br />\r\nHere in the sand, we’re surrounded by other families doing the same thing we’re doing.&nbsp; They sunbathe, swim, and play with their kids.&nbsp; And there’s nothing remarkable about that, yet a remarkable thing happens.&nbsp; Each day the same people set up their folding chairs and colored umbrellas around us, and their faces and activities become familiar.&nbsp; They are total strangers, but&nbsp;we begin to feel like we know them.<br />\r\n<br />\r\nThere’s a group of six adults – three couples, we speculate, probably in their thirties&nbsp;– with several small children between them.&nbsp; All of them are attractive and in good physical shape, but it’s hard to miss a particularly chiseled six-pack on one of the men.&nbsp; We nickname him \"Buff Dad\".&nbsp; He brings out a surf board and shows off his skills, while one of the other \"Fit Family\" dads uses a stand-up, paddle board to navigate the surf.&nbsp; He and Buff Dad trade boards, and we watch as Buff Dad rows each one of the Fit Family kids out beyond the break point and back.&nbsp; We marvel at his core strength.<br />\r\n<br />\r\nA little further to the left is \"Matching Chair\" family.&nbsp; They have rented a dozen or so blue beach chairs, and half that many umbrellas in the same blue canvas.&nbsp; They stretch them out in a line facing the ocean – umbrella, chair, chair, umbrella, chair… and so on.&nbsp; The Matching Chairs are a sport loving family.&nbsp; They start out the day with an enthusiastic game of kickball, and we notice that some of them wear matching T-shirts imprinted with “Battle at the Beach 2011”.&nbsp; When we pack up for the day, the kids are in a circle, still tossing the kickball back and forth.<br />\r\n<br />\r\nBy day number three, we simply expect our usual crowd to be there, and they don’t disappoint.&nbsp; One of the Matching Chair dads helps us set up an unruly umbrella.&nbsp; He explains that the key is not to twist it into the sand, but to rock it back and forth until it’s deep enough to hold.<br />\r\n<br />\r\nAnother day, two of the men in our group&nbsp;admire Matching Chair mom’s football throw.&nbsp; <em>Clearly, this is what happens when your children are all boys</em>, they conclude.&nbsp; Five minutes later, they are still praising her form.&nbsp; I scan the beach for Buff Dad.&nbsp; I find him.&nbsp; He’s using some type of sling shot to launch water balloons to a waiting line of Fit Family kids.&nbsp; It’s not going well – most of the balloons break before making it out of the sling shot – but it’s a noteworthy effort.&nbsp; Later, we laugh as a Matching Chair kid gets pulled toward the water faster than he can run by an excited black lab pup.&nbsp; The leash slips from his hand, and the dog runs into the surf, enjoying his moment of freedom.&nbsp; A Matching Chair dad comes to retrieve the child and pooch, and all is well.<br />\r\n<br />\r\nThe end of our vacation arrives long before we are ready.&nbsp; We sit on the beach for our last few hours and watch Matching Chair family make a pyramid out of kids.&nbsp; They stack <em>four rows</em> of kids – we’re sure they’re going to fall, but they don’t.&nbsp; Moms snap pictures quickly and then give the kids permission to un-stack.&nbsp; There is a tangle of arms and legs as the pyramid dismantles.&nbsp; We wonder if it’s their last day, too.<br />\r\n<br />\r\nOn the seven hour drive home, I think about our beach buddies and imagine that they are traveling home as well.&nbsp; I can’t tell you any of their real names – our pet names are all I know – but I think fondly of these familiar strangers and the memories of our vacation that include them.</p>\r\n",
+                "summary": "Some of the best entertainment on the beach has nothing to do with the beach itself – it’s the people.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1628599073",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": {
+                "value": "...the best entertainment on the beach has nothing to do with the beach itself.  It’s the people."
+            },
+            "field_exclude_from_tech_blog": {
+                "value": "1"
+            },
+            "field_image": {
+                "target_id": "104",
+                "alt": "beach sand and fishing pier",
+                "title": "",
+                "width": "1024",
+                "height": "768",
+                "url": "/sites/default/files/2021-08/14468451683_2a4c8ee91f_b.jpg",
+                "filename": "14468451683_2a4c8ee91f_b.jpg",
+                "filesize": "111311",
+                "mimetype": "image/jpeg"
+            },
+            "field_release_date": {
+                "value": "2021-08-10"
+            },
+            "field_tags": {
+                "target_id": "193",
+                "term_name": "beach nostalgia people-watching memories",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "58",
+        "uuid": "f2b0ecb6-3e0f-4342-be37-d496bf6296fb",
+        "title": "Old-fashioned, Slice-n-Stack Background Images",
+        "type": "article",
+        "created": "2021-09-09T15:43:20-04:00",
+        "changed": "2021-11-05T09:10:01-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "290"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1636117801"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/old-fashioned-slice-n-stack-background-images",
+                "pid": "79",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>A long time ago, using sliced background images in multiple divs to create fancy \"layouts\" was a pretty neat thing.&nbsp; The technique was streamlined by image editors that provided a way to&nbsp;build web mock-ups, <a href=\"https://helpx.adobe.com/photoshop/using/slicing-web-pages.html\">slice them into sections</a>,&nbsp;and then export the slices as individual images.&nbsp;</p>\r\n\r\n<p>Consider the layout below.&nbsp; There was a time when this might have been accomplished with background images, using a method I like to call <em>Slice-n-Stack</em>.</p>\r\n\r\n<p>&nbsp;<img alt=\"web page with diagonal layout and floating cta\" data-entity-type=\"file\" data-entity-uuid=\"4cb7ecb2-1e96-48f9-9376-f84adcbc022c\" height=\"429\" src=\"/sites/default/files/inline-images/Mock.png\" width=\"518\" /></p>\r\n\r\n<p>Imagine that this \"layout\" was created as an image in Photoshop, or any graphic editor.&nbsp; Now imagine the image (minus the CTA text)&nbsp;being sliced in half horizontally to become a top and a bottom image.&nbsp; In the markup, two <code>div</code> elements would be stacked on top of one another, and the top and bottom image slices would be&nbsp;added in the background of their respective <code>div</code>. &nbsp;&nbsp;&nbsp;To make this work, the images had to match perfectly at the \"seam\" and no margins could exist on the <code>divs</code>:<br />\r\n<img alt=\"web page layout separating div elements\" data-entity-type=\"file\" data-entity-uuid=\"88cb24d7-b3db-4115-b679-dcb5985f209b\" height=\"445\" src=\"/sites/default/files/inline-images/Separate-divs.png\" width=\"537\" /></p>\r\n\r\n<p>(And yes, in the scenario I'm describing, the word \"here\" would be placed as content in a separate <code>div</code> from the words \"Some CTA\".)&nbsp;&nbsp;</p>\r\n\r\n<p>If you're scratching your head in disbelief right now, it's OK.&nbsp; Obviously, this creates some questionable markup.&nbsp; But we did all sorts of image trickery back in the day to accomplish things we couldn't otherwise accomplish – I'm talking <em>long</em> before CSS3, or even the days of <a href=\"http://www.csszengarden.com/\">CSS Zen Garden</a>.&nbsp;</p>\r\n\r\n<p>Today you'd probably do something with <code>clip-path</code>, negative margins and relative positioning, as demonstrated in this <a href=\"https://codepen.io/kdomenick/pen/QWgdzMO\">angled background CodePen</a>&nbsp;to accomplish the angled background and floating CTA.&nbsp; Since these CSS properties&nbsp;are available today, and browser support for them is good, there's no need to devolve to the methods of 2001.&nbsp;&nbsp;</p>\r\n\r\n<p>But is there ever any reason to use old-fashioned, sliced background images?&nbsp; Up until recently, I might have answered \"no.\"&nbsp; But then a thing happened.&nbsp;&nbsp;</p>\r\n\r\n<p>I did some work on a Drupal theme with three simple regions: Header, Content, and Footer.&nbsp; The site used <a href=\"https://www.drupal.org/docs/8/core/modules/layout-builder\">Layout Builder</a> to place components in the Content Region, including a&nbsp;Hero with a background image.&nbsp;&nbsp;On the majority of the pages, the Header region had a plain, white background.&nbsp; However, on two special landing pages, the background&nbsp;image from the Hero component needed to \"bleed into\" the Header region.&nbsp;&nbsp;</p>\r\n\r\n<p>The design for most pages looked like this, with&nbsp;the dotted lines representing two separate divs, or in this case, two complex sets of divs and markup&nbsp;that make up a Drupal region.&nbsp;&nbsp;</p>\r\n\r\n<p><img alt=\"design for most pages\" data-entity-type=\"file\" data-entity-uuid=\"8325cda6-91bc-437c-973d-1d88500681d4\" height=\"515\" src=\"/sites/default/files/inline-images/Most-pages.png\" width=\"1189\" /></p>\r\n\r\n<p>The design for the special landing pages looked like this.&nbsp;&nbsp;</p>\r\n\r\n<p><img alt=\"design for special pages\" data-entity-type=\"file\" data-entity-uuid=\"6278f3f1-aaf4-4de7-bcac-dd676a2c065e\" height=\"515\" src=\"/sites/default/files/inline-images/Some-pages.png\" width=\"1189\" /></p>\r\n\r\n<blockquote>\r\n<p>At first I laughed at the idea of using ol' Slice-n-Stack to implement the header background. &nbsp;But then I thought, geesh, I could have this whole thing done in about an hour.</p>\r\n</blockquote>\r\n\r\n<p>I considered – and attempted – a few different approaches&nbsp;but quickly decided that they were going to take more time than I wanted, or impacted too many other things.&nbsp;</p>\r\n\r\n<p>The background image <em>had</em> to be added through a field in a layout builder component.&nbsp; And even though the actual image would rarely, if ever, be edited on the special landing pages, the Hero component itself could be used on other pages.</p>\r\n\r\n<p>At first I laughed at the idea of using ol' Slice-n-Stack to implement the header background.&nbsp; But then I thought, <em>geesh, I could have this whole thing done in about an hour...&nbsp;</em></p>\r\n\r\n<p>The header content had a certain&nbsp;height, so I cropped off the top of the hero image to match the header content height, and placed the cropped piece as the header background on my special pages.&nbsp; I set the <code>background-position</code> of the header image to <code>bottom center</code><em>, </em>and the <code>background-position&nbsp;</code>of the hero image to <code>top center</code>.&nbsp; And the images lined up perfectly.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>My CSS looked something like this:</p>\r\n\r\n<pre>\r\n<code class=\"language-scss\">.special-page-header {\r\n    background: url(upper-sliced-image.jpg) no-repeat bottom center;\r\n    max-height: 122px;\r\n\r\n    @media screen and (max-width: 762px) {\r\n        height: 73px;\r\n    }\r\n}\r\n\r\n.hero { // Note that the actual URL to the image is set in a template.  This code is only for positioning.\r\n    background-position: no-repeat top center;\r\n}</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>The only adjustment I had to make was on smaller screen sizes, when the header content shrunk, and a small white line appeared at the bottom of header.&nbsp; But setting a fixed height for smaller screens resolved the issue.&nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Why This Approach Worked</h2>\r\n\r\n<p>There are a few reasons why this approach worked for this particular problem and project.&nbsp;&nbsp;</p>\r\n\r\n<ol>\r\n\t<li>As stated before, the background image of the special landing page hero&nbsp;did not need to change regularly.&nbsp; If that wasn't the case, each time a new hero image was desired, the image would have to be sliced, and the upper portion saved to whatever path was referenced in the CSS, making this a potentially inefficient solution.&nbsp;</li>\r\n\t<li>The URLs of the special landing pages were known and did not need to change regularly.&nbsp; This is what allowed me to target those pages in a template and provide a separate class for their headers.&nbsp; Here again, if routinely changed, the solution might be inefficient.&nbsp; &nbsp;</li>\r\n</ol>\r\n\r\n<h2>&nbsp;</h2>\r\n\r\n<h2>Other Possible Approaches</h2>\r\n\r\n<h3>Build the special landing pages <em>without</em> Layout Builder.&nbsp;&nbsp;</h3>\r\n\r\n<p>My first consideration was to create a new content type for the special landing pages and custom theme the entire nodes.&nbsp; At the node template level, I could access both the Header and Content regions.&nbsp; This approach certainly would have worked, but it would have meant longer development time and a different process for content editors, who were learning to build pages with Layout Builder.&nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h3>Some positioning trick.</h3>\r\n\r\n<p>Another thing I considered was absolutely positioning the header&nbsp;on the special landing pages only.&nbsp; This would pull the header out of the normal flow and force everything below it upwards.&nbsp; But, at least in my quick experimentation using the browser inspector, it was going to require additional&nbsp;CSS to resolve margin issues on the hero.&nbsp; Additionally, the Statue of Liberty flame was, itself, an absolutely positioned element that moved about as the screen size change, and it was going to need styling work to adjust its position at various breakpoints.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr style=\"style-mint\" />\r\n<p>&nbsp;</p>\r\n\r\n<p>In the end, an old technique seemed to be the quickest, easiest solution.&nbsp; And sometimes the quickest, easiest solution is the right one.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "Before CSS3 we did all sorts of image trickery to accomplish things we couldn't otherwise accomplish.  But are any of these old-fashioned techniques still relevant?",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1631216600",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": {
+                "value": "At first I laughed at the idea of using ol' Slice-n-Stack to implement the header background.  But then I thought, geesh, I could have this whole thing done in about an hour. "
+            },
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "110",
+                "alt": "cucumber slice",
+                "title": "",
+                "width": "542",
+                "height": "563",
+                "url": "/sites/default/files/2021-10/Screen%20Shot%202021-10-19%20at%201.55.47%20PM.png",
+                "filename": "Screen Shot 2021-10-19 at 1.55.47 PM.png",
+                "filesize": "106236",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2021-09-09"
+            },
+            "field_tags": [
+                {
+                    "target_id": "194",
+                    "term_name": "background images",
+                    "term_vocabulary": "tags"
+                },
+                {
+                    "target_id": "195",
+                    "term_name": "sliced images",
+                    "term_vocabulary": "tags"
+                }
+            ]
+        }
+    },
+    {
+        "id": "59",
+        "uuid": "7ad157a3-809a-44c1-8c54-3e3ce67c1830",
+        "title": "IDEA - drupal core/composer update",
+        "type": "article",
+        "created": "2021-09-16T09:03:12-04:00",
+        "changed": "2021-09-16T09:03:12-04:00",
+        "published": false,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "273"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1631797392"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/idea-drupal-corecomposer-update",
+                "pid": "80",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>When composer update command does nothing</p>\r\n",
+                "summary": "",
+                "format": "basic_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1631797392",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": [],
+            "field_release_date": {
+                "value": "2021-07-30"
+            },
+            "field_tags": []
+        }
+    },
+    {
+        "id": "60",
+        "uuid": "f4dd71e6-e226-4705-9e7e-80f6ea54d9fb",
+        "title": "IDEA - TWIG kint/debug",
+        "type": "article",
+        "created": "2021-11-03T13:28:02-04:00",
+        "changed": "2021-11-03T13:28:02-04:00",
+        "published": false,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "288"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1635960482"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/idea-twig-kintdebug",
+                "pid": "81",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<pre>\r\n<code class=\"language-php\">/**\r\n * Implements template_preprocess_menu().\r\n */\r\nfunction citizenship_preprocess_menu(&amp;$variables): void {\r\n  if ($variables['menu_name'] == 'utility-menu') {\r\n    kint($variables);\r\n  }\r\n}</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1635960482",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": [],
+            "field_release_date": {
+                "value": "2021-11-03"
+            },
+            "field_tags": []
+        }
+    },
+    {
+        "id": "61",
+        "uuid": "335d6026-6593-4731-876b-b96fce17cfdb",
+        "title": "Useful CSS - Simple Fixes for Everyday Styling Challenges",
+        "type": "article",
+        "created": "2021-11-08T09:10:41-05:00",
+        "changed": "2022-01-20T15:38:55-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "324"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1642711135"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/my-go-to-css",
+                "pid": "82",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>&nbsp;</p>\r\n\r\n<p>Technically, these aren't <em>tricks</em>, nor are they obscure solutions; they're just simple things I use to overcome everyday styling challenges.&nbsp; I implement some of these solutions in every project I work on, and I thought it would be helpful to document these frequently-used fixes.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>The Lobotomized Owl</h2>\r\n\r\n<p>When you really need a <code>:first-of-class</code> or <code>:last-of-class </code>selector, but sadly, one doesn't exist, use this to style <em>all but the first descendant</em>:</p>\r\n\r\n<pre>\r\n<code class=\"language-css\">.content &gt; * + * {\r\n  margin-top: 1rem;\r\n}</code></pre>\r\n\r\n<p>This sets a top margin for each direct descendant&nbsp;<em>when it follows another</em>.&nbsp; All credit on this goes to <a href=\"https://alistapart.com/article/axiomatic-css-and-lobotomized-owls/\">The Lobotomized Owl Selector</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>A simple Sticky Footer&nbsp;</h2>\r\n\r\n<pre>\r\n<code class=\"language-css\">html, body { \r\n  height: 100%;\r\n}\r\n\r\nfooter {\r\n  position: sticky;\r\n  top: 100vh;\r\n}</code></pre>\r\n\r\n<p>Not the same as <code>position: sticky</code> by itself, <a href=\"https://css-tricks.com/a-clever-sticky-footer-technique/\">as explained in this article</a>, the above styling with \"pin\" the footer to the bottom of the content.&nbsp;&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Extra-bold Font Fix</h2>\r\n\r\n<p>When you can't make a font any bolder.&nbsp; But you still want it bolder.&nbsp; Use the <code>text-shadow</code> property.&nbsp;&nbsp;</p>\r\n\r\n<pre>\r\n<code class=\"language-css\">.bold {\r\n  font-weight: bold;\r\n}\r\n\r\n.bolder {\r\n  text-shadow: 0 0 .01px black;\r\n}</code></pre>\r\n\r\n<p>Experiment with one or the other, or combine both <code>font-weight</code> and <code>text-shadow</code>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>CSS Reset</h2>\r\n\r\n<p>Over the years, I've had many, many a \"standard\" reset.&nbsp; But this became my go-to in 2021.&nbsp;</p>\r\n\r\n<p>The new/modern reset:&nbsp;&nbsp;<a href=\"https://www.joshwcomeau.com/css/custom-css-reset/\">https://www.joshwcomeau.com/css/custom-css-reset/</a></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Partial Bottom Border</h2>\r\n\r\n<p>Create a bottom border of any desired length and width that doesn't have to span the full width of the .headline text.&nbsp; It can also be positioned as desired below the text by adjusting the <code>bottom</code> value.</p>\r\n\r\n<pre>\r\n<code class=\"language-css\">.headline {\r\n  position: relative;\r\n}\r\n    \r\n.headline::after {\r\n  content: '';\r\n  width: 32px;\r\n  height: 1px;\r\n  border-bottom: 1px solid #7BBDFF;\r\n  position: absolute;\r\n  bottom: -8px;\r\n  left: 0;\r\n}</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Responsive Typography with <code>clamp()</code></h2>\r\n\r\n<p>Use a convenient tool like this <a href=\"https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/#for-those-who-dont-mind-that-edge-case\">fluid typography calculator&nbsp;</a>&nbsp;to determine clamp settings, and responsive typography becomes easy.&nbsp; All that's needed are the minimum/maximum font sizes and minimum/maximum viewport sizes.&nbsp;&nbsp;</p>\r\n\r\n<pre>\r\n<code class=\"language-css\">h1 {\r\n font-size: clamp(1rem, 0.1038rem + 3.7736vw, 3.5rem);\r\n}\r\n</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Grid with Defined Number of Columns</h2>\r\n\r\n<p>When you need to create a grid layout for a known number of columns, try this combination of <code>auto-fit</code> or <code>auto-fill</code> and <code>minmax</code>.&nbsp; This grid is responsive, in that the number of columns can <em>decrease</em> but will never increase beyond the known number.&nbsp; Below is just a snippet.&nbsp; See <a href=\"https://codepen.io/kdomenick/pen/abLZmWe\">the full CodePen</a> here.</p>\r\n\r\n<pre>\r\n<code class=\"language-css\">.grid-9x3 {\r\n  max-width: 900px;\r\n  margin: 0 auto;\r\n  align-items: start;\r\n  justify-items: start;\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));\r\n  column-gap: 2rem;\r\n}</code></pre>\r\n\r\n<p>Note the two options: <code>auto-fit</code> and <code>auto-fill</code>.&nbsp; The&nbsp;<a href=\"https://codepen.io/kdomenick/pen/abLZmWe\">the full CodePen</a> shows both examples, but in summary <code>auto-fit</code> will expand the column width when there is extra space; <code>auto-fill</code> will not.&nbsp; I usually experiment with both to see what looks best as the screen shrinks.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>Two solid background colors</h2>\r\n\r\n<p>Create a single div (or other element) with two solid backgrounds, that meet at an arbitrary point, but aren't blended.&nbsp; This creates the illusion of two different sections and can help accommodate \"overlapping\" layouts.&nbsp; It can be accomplished two different ways.</p>\r\n\r\n<p>With <code>linear-gradient</code></p>\r\n\r\n<pre>\r\n<code class=\"language-css\">.two-bg--horizontal {\r\n  background: linear-gradient(to top, #fff 0%, #fff 50%,#f2f2f2 50%,#f2f2f2 100%);\r\n}</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>With <code>conic-gradient</code></p>\r\n\r\n<pre>\r\n<code class=\"language-css\">.two-bg--vertical {\r\n    background: conic-gradient(#fff 50%, #f2f2f2 0);\r\n}</code></pre>\r\n\r\n<p>In either case, the percentages can be adjusted to move the meeting point of the two backgrounds.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr class=\"style-mint\" />\r\n<p>I plan to keep this a \"living\" article with updates whenever I discover (or remember) a favorite CSS fix.</p>\r\n",
+                "summary": "Every developer should have a few CSS tricks up their sleeve.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1636380641",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "112",
+                "alt": "CSS 3",
+                "title": "",
+                "width": "399",
+                "height": "380",
+                "url": "/sites/default/files/2021-12/CSS.png",
+                "filename": "CSS.png",
+                "filesize": "123692",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2021-12-08"
+            },
+            "field_tags": {
+                "target_id": "197",
+                "term_name": "css",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "62",
+        "uuid": "8f2767ba-cbad-4ffb-858c-ab637e447101",
+        "title": "Drupal 8/9 – Adding ID Attributes in TWIG ",
+        "type": "article",
+        "created": "2021-11-11T14:30:35-05:00",
+        "changed": "2021-11-11T15:42:31-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "296"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1636663351"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/drupal-89-adding-id-attributes-twig",
+                "pid": "83",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Named anchors are helpful when you need to navigate users to sections <em>within</em> a page.&nbsp; It's a rather common request and should be easy to implement.&nbsp; However, page sections might be built with Paragraphs, Layout Builder components, blocks or something else.&nbsp; So how do you render section IDs so that you can create named anchors linking directly to those sections?</p>\r\n\r\n<p>Most scenarios I encounter fall into one of two categories.</p>\r\n\r\n<h2>#1 - The content or component has a field for manually entering an ID value</h2>\r\n\r\n<p>Let's say I have a content type with a field named <code>field_custom_identifiers&nbsp;</code>that can be populated with an ID value.&nbsp; This scenario requires a content editor to be aware of, and populate, this field with the desired value.&nbsp; That value can then be rendered in the TWIG template as an ID.&nbsp;</p>\r\n\r\n<p>In this example,&nbsp;<code>field_custom_identifiers</code>&nbsp;can be used to add an ID<i>&nbsp;as well as</i>&nbsp;other custom classes.&nbsp; This method extracts only the first value of that field before a space, and turns it into an ID.&nbsp; Also note that the <code>clean_class</code> filter will convert underscores ( _ ) into hyphens ( - ).</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">{% if node.field_custom_identifiers %}\r\n   {% set section_name = node.field_custom_identifiers.value|split(' ')[0]|clean_class %}\r\n{% endif %}\r\n\r\n&lt;div id=\"{{ section_name }}\"&gt;\r\n\r\n  {{ ...other content }}\r\n\r\n&lt;/div&gt;</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h2>#2 - The ID value must be created dynamically from some existing field</h2>\r\n\r\n<p>In this scenario, let's say my content type only contains fields for Title, Description, and Image.&nbsp; But I need to take one of those fields and use it as an ID value.&nbsp; The field that makes the most sense here is <em>Title</em>.&nbsp; But even if the Title field is short, plain text, it likely contains spaces.&nbsp; I could do something like the above example, where I extract the first value before a space:</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">{% if node.field_title %}\r\n   {% set section_name = node.field_title.value|split(' ')[0]|clean_class %}\r\n{% endif %}\r\n\r\n&lt;div id=\"{{ section_name }}\"&gt;\r\n\r\n  {{ content.field_title }}\r\n  {{ ...other content }}\r\n\r\n&lt;/div&gt;</code></pre>\r\n\r\n<p>But what if most of my titles started with the word \"the\" or some other common word?&nbsp; Having multiple sections on a page with the same ID is symantically incorrect.&nbsp; Therefore, it might be better to do something like this, which instead converts spaces into hyphens:</p>\r\n\r\n<pre>\r\n<code class=\"language-php\">{% set title_val = (render_var(content.field_title.0)) %}\r\n{% set section_name = title_val|replace({' ': '-'}) %}\r\n\r\n&lt;div id=\"{{ section_name }}\"&gt;\r\n\r\n  {{ content.field_title }}\r\n  {{ ...other content }}\r\n\r\n&lt;/div&gt;</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<hr />\r\n<p>&nbsp;</p>\r\n",
+                "summary": "Here are two quick and easy solutions to add ID attributes to a TWIG template.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1636660571",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": {
+                "target_id": "111",
+                "alt": "TWIG template",
+                "title": "",
+                "width": "200",
+                "height": "202",
+                "url": "/sites/default/files/2021-11/twig.png",
+                "filename": "twig.png",
+                "filesize": "11592",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2021-09-14"
+            },
+            "field_tags": {
+                "target_id": "196",
+                "term_name": "twig theme anchors",
+                "term_vocabulary": "tags"
+            }
+        }
+    },
+    {
+        "id": "63",
+        "uuid": "1f0b01c7-4b43-4784-a317-4dfa01357e9d",
+        "title": "React circle progress",
+        "type": "article",
+        "created": "2021-12-02T16:15:53-05:00",
+        "changed": "2021-12-02T16:15:53-05:00",
+        "published": false,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "306"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1638479753"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/react-circle-progress",
+                "pid": "84",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<pre>\r\n<code class=\"language-javascript\">{\r\n  /* import React from \"react\";\r\n\r\nclass ChangingProgressProvider extends React.Component {\r\n  static defaultProps = {\r\n    interval: 500,\r\n  };\r\n\r\n  state = {\r\n    valuesIndex: 0,\r\n  };\r\n\r\n  componentDidMount() {\r\n    setTimeout(() =&gt; {\r\n      this.setState({\r\n        valuesIndex: (this.state.valuesIndex + 1) % this.props.values.length,\r\n      });\r\n    }, this.props.interval);\r\n  }\r\n\r\n  render() {\r\n    return this.props.children(this.props.values[this.state.valuesIndex]);\r\n  }\r\n}\r\n\r\nexport default ChangingProgressProvider; */\r\n}\r\n</code></pre>\r\n\r\n<pre>\r\n<code class=\"language-javascript\">import React from \"react\";\r\nimport {\r\n  CircularProgressbarWithChildren,\r\n  buildStyles,\r\n} from \"react-circular-progressbar\";\r\nimport ChangingProgressProvider from \"./changing-progress-provider\";\r\n\r\nconst CircleProgress = ({ percentNumber }) =&gt; (\r\n  &lt;div\r\n    className=\"circle-progress\"\r\n    style={{\r\n      width: 140,\r\n      height: 140,\r\n      fontFamily: \"Ultra Condensed Roman\",\r\n      marginLeft: \"auto\",\r\n      marginRight: \"auto\",\r\n    }}\r\n  &gt;\r\n    &lt;ChangingProgressProvider values={[0, percentNumber]}&gt;\r\n      {(percentNumber) =&gt; (\r\n        &lt;CircularProgressbarWithChildren\r\n          value={percentNumber}\r\n          styles={buildStyles({\r\n            rotation: 0.5,\r\n            strokeLinecap: \"round\",\r\n            textSize: \"42px\",\r\n            pathColor: \"#67BF00\",\r\n            textColor: \"#6576A0\",\r\n            trailColor: \"#E3EAEC\",\r\n            backgroundColor: \"#3e98c7\",\r\n            pathTransition:\r\n              percentNumber === 0 ? \"none\" : \"stroke-dashoffset 0.5s ease 0s\",\r\n          })}\r\n        &gt;\r\n          &lt;div\r\n            className=\"stat__number ultra-condensed-56\"\r\n            style={{ marginTop: -10, marginRight: -8 }}\r\n          &gt;\r\n            {percentNumber}\r\n            &lt;sup&gt;%&lt;/sup&gt;\r\n          &lt;/div&gt;\r\n        &lt;/CircularProgressbarWithChildren&gt;\r\n      )}\r\n    &lt;/ChangingProgressProvider&gt;\r\n  &lt;/div&gt;\r\n);\r\n\r\nexport default CircleProgress;\r\n</code></pre>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1638479753",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "0"
+            },
+            "field_image": [],
+            "field_release_date": {
+                "value": "2021-12-01"
+            },
+            "field_tags": []
+        }
+    },
+    {
+        "id": "64",
+        "uuid": "246a6610-0fa2-4a1f-8fdf-597eaed34e51",
+        "title": "Appropriate Omelet Vegetables",
+        "type": "article",
+        "created": "2022-01-04T16:27:57-05:00",
+        "changed": "2022-01-20T16:23:44-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "326"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1642713824"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "1"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog/appropriate-omelet-vegetables",
+                "pid": "85",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>Consider the omelet.&nbsp; A breakfast staple for those who like eggs but prefer their eggs with other stuff mixed in.</p>\r\n\r\n<p>As versatile as the omelet is, it recently occurred to me that you can't put just <em>anything</em> into an omelet.&nbsp; Now, I'm not suggesting you would ever try to add, for example, <em>pasta</em>.&nbsp; But in terms of raw ingredients, the omelet can handle a lot!&nbsp; Except it seems that there <em>are</em> rules, particularly when it comes to vegetables.&nbsp;&nbsp;</p>\r\n\r\n<p>It's perfectly acceptable to add <strong>onions</strong>, <strong>peppers</strong>, and <strong>mushrooms</strong> into an omelet.&nbsp; In fact, I would wager, these three are the most commonly added.&nbsp; But&nbsp;<strong>cauliflower</strong> in an omelet?&nbsp; That's cringe-worthy.&nbsp;&nbsp;</p>\r\n\r\n<p>And while plenty of people also enjoy&nbsp;<strong>spinach</strong>&nbsp;or <strong>broccoli </strong>in their omelet, literally <em>no one</em> has ever added&nbsp;<strong>rhubarb</strong>.</p>\r\n\r\n<p>But why not?&nbsp;&nbsp;</p>\r\n\r\n<p>I've done some research here, and I have to say, a vegetable's admittance into an omelet recipe seems to be completely random.&nbsp;</p>\r\n\r\n<p>It's not based on color.&nbsp; Orange-colored <strong>peppers</strong> are fine.&nbsp; <strong>Carrots</strong>&nbsp;and <strong>pumpkin</strong> are definitely not.&nbsp;&nbsp;</p>\r\n\r\n<p>It's not based on family.&nbsp; Take the cruciferous vegetables: <strong>broccoli</strong>, <strong>kale</strong>, <strong>brussel sprouts</strong>, and <strong>cabbage,&nbsp;</strong>to name a few.&nbsp; The first two?&nbsp; Sure!&nbsp; Add liberally!&nbsp; The second two?&nbsp; Nope.&nbsp;</p>\r\n\r\n<p>Even vegetable categories like \"leafy greens\" don't narrow the list.&nbsp; I've definitely thrown handfuls of <strong>arugula</strong> into my omelets, but never <strong>romaine lettuce</strong>.&nbsp;</p>\r\n\r\n<p>The sneaky fruits that masquerade as vegetables, like <strong>tomatoes</strong> and <strong>olives</strong>, are OK.&nbsp; But then there's the <strong>avocado</strong>.&nbsp; And the&nbsp;<strong>cucumber</strong>.&nbsp; It feels normal to have avocado toast <em>alongside</em> an omelet; however, I'm not cool with dicing and cooking my avocado <em>into</em> an omelet.&nbsp; And cucumbers only belong in one place: the pickle jar.&nbsp;&nbsp;</p>\r\n\r\n<p>The aforementioned carrots would be disastrous mixed into eggs, and no one would argue that <strong>beets</strong>, <strong>radishes</strong>, and <strong>turnips</strong> have no place in any omelet.&nbsp; So can we rule out root vegetables?&nbsp; Sadly, we cannot.&nbsp; Because that would eliminate the popular onion.&nbsp; And garlic, of course.&nbsp;&nbsp;</p>\r\n\r\n<p>But wait.&nbsp; Onions and garlic are \"aromatics\".&nbsp; Could it be that aromatics are OK?&nbsp; Nope.&nbsp; Again with the carrots.&nbsp; And celery (who knew that celery was aromatic?).&nbsp; Also ginger, fennel, and lemongrass.&nbsp; Not in my omelet!&nbsp;</p>\r\n\r\n<p>There are a few&nbsp;<em>questionable</em> vegetables, as well.&nbsp; Questionable meaning a chef somewhere had an overabundance of <strong>okra</strong> and said, \"Hey, let's make a Farmer's Omelet and put it on the brunch menu.\"&nbsp; It's been done, but it's sketchy.&nbsp; Same with <strong>sweetcorn</strong>.&nbsp;&nbsp;</p>\r\n\r\n<p>That gets me thinking about <strong>green beans</strong> and <strong>peas</strong>.&nbsp; But even as I'm typing \"green beans\" I have an epiphany.&nbsp; Can we say \"no\" to legumes?&nbsp;&nbsp;</p>\r\n\r\n<p>*googles legumes</p>\r\n\r\n<p>Sigh.&nbsp; I&nbsp;<em>absolutely</em> put <strong>black beans</strong> in my omelets.&nbsp; And I like them just fine.</p>\r\n\r\n<p>I decide to see <a href=\"https://simple.wikipedia.org/wiki/List_of_vegetables\">what Wikipedia calls a vegetable</a>, and it's there, in that list, that I find something groundbreaking.&nbsp; Perhaps there is <em>one rule</em> we can apply.&nbsp; &nbsp;<strong>Squashes</strong> and <strong>gourds</strong> – which again, are technically fruit – are all in a category that <em>I think</em> we can exclude.</p>\r\n\r\n<p><strong>Cucumber</strong>, <strong>zucchini</strong>, <strong>spaghetti squash</strong>, and on down the list... all disgusting additions to an omelet.&nbsp;&nbsp;</p>\r\n\r\n<p>I also notice that Wikipedia has onions and such listed apart from the other root vegetables, but everyone knows they grow underground.&nbsp;&nbsp;</p>\r\n\r\n<p>And so, finally, I give you the omelet-vegetable rules:</p>\r\n\r\n<ol>\r\n\t<li>No squashes or gourds</li>\r\n\t<li>No root vegetables, except for onions and their kinfolk</li>\r\n\t<li>No legumes, except for black beans</li>\r\n\t<li>Only a couple of the sneaky fruits that masquerade as vegetables</li>\r\n\t<li>One or two cruciferous veggies</li>\r\n\t<li>Never romaine lettuce</li>\r\n\t<li>Never rhubarb</li>\r\n\t<li>Peppers.&nbsp; Always peppers.</li>\r\n\t<li>Okra only on Sundays.&nbsp; At brunch.</li>\r\n</ol>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "It recently occurred to me that you can't put just anything in an omelet.",
+                "format": "full_html"
+            },
+            "comment": {
+                "status": "1",
+                "cid": "0",
+                "last_comment_timestamp": "1641331677",
+                "last_comment_name": null,
+                "last_comment_uid": "1",
+                "comment_count": "0"
+            },
+            "field_blockquote": [],
+            "field_exclude_from_tech_blog": {
+                "value": "1"
+            },
+            "field_image": {
+                "target_id": "113",
+                "alt": "carrots and radish",
+                "title": "",
+                "width": "590",
+                "height": "488",
+                "url": "/sites/default/files/2022-01/Screen%20Shot%202022-01-20%20at%204.19.14%20PM.png",
+                "filename": "Screen Shot 2022-01-20 at 4.19.14 PM.png",
+                "filesize": "681358",
+                "mimetype": "image/png"
+            },
+            "field_release_date": {
+                "value": "2022-01-04"
+            },
+            "field_tags": []
+        }
+    }
+]

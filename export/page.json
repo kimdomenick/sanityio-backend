@@ -1,0 +1,352 @@
+[
+    {
+        "id": "21",
+        "uuid": "be898801-c494-4576-8645-03592d68b4d2",
+        "title": "Home",
+        "type": "page",
+        "created": "2018-04-04T14:59:37-04:00",
+        "changed": "2018-04-04T14:59:48-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "22"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1522868388"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": [],
+            "layout_builder__layout": []
+        }
+    },
+    {
+        "id": "22",
+        "uuid": "a7fd8ae2-5c57-4b81-8175-40186a06d5d6",
+        "title": "Tech Portfolio",
+        "type": "page",
+        "created": "2018-04-05T14:45:56-04:00",
+        "changed": "2021-11-30T16:00:25-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "305"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1638306025"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/tech-portfolio",
+                "pid": "47",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<hr class=\"style-mint\" />\r\n<p class=\"text-align-center\">View online resume and <strong>recent</strong> work portfolio&nbsp;here:&nbsp;<a href=\"https://kimberly-domenick.netlify.app/\" rel=\"noopener noreferrer\" target=\"_blank\">https://kimberly-domenick.netlify.app</a></p>\r\n\r\n<hr class=\"style-mint\" />\r\n<p>This portfolio showcases <strong>older</strong> <strong>front-end</strong> and <strong>Drupal </strong>development work from 2018 and earlier.&nbsp; &nbsp;Some sites and projects live behind a firewall, and are&nbsp;<strong>not accessible to the public</strong>.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                "summary": "Recent Work -- Drupal Sites -- Front-end",
+                "format": "full_html"
+            },
+            "layout_builder__layout": []
+        }
+    },
+    {
+        "id": "23",
+        "uuid": "89326b78-bd67-4ea8-8ff6-972ad0596e52",
+        "title": "Blog",
+        "type": "page",
+        "created": "2018-04-05T15:56:55-04:00",
+        "changed": "2022-01-04T15:12:44-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "311"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1641327164"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/blog",
+                "pid": "46",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>I blog about <strong>Drupal –&nbsp;</strong>modules, configuration, feature implementation, troubleshooting, and more – along with other front-end development topics.&nbsp; I also write about life and creative/crafty things and pretty much anything that interests me.&nbsp;</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "layout_builder__layout": []
+        }
+    },
+    {
+        "id": "24",
+        "uuid": "97ec6837-2cda-4339-abf7-898d1ed4c675",
+        "title": "Creative Portfolio",
+        "type": "page",
+        "created": "2018-04-16T13:24:27-04:00",
+        "changed": "2018-10-19T11:23:57-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "143"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1539962637"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": [],
+            "path": {
+                "alias": "/creative-portfolio",
+                "pid": "48",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p>My Creative Portfolio is <strong>more Pinterest than Picasso</strong>, but it's how I prefer to spend my free time: painting, crafting, making jewelry, decorating and generally being creative.</p>\r\n\r\n<p>See the Interiors photos below and <a href=\"/blog/bargain-staging\">this article</a> for info on what I call 'Bargain Staging,' the art of staging your home for resale, and doing minor renovations, while on a limited budget.</p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "layout_builder__layout": []
+        }
+    },
+    {
+        "id": "34",
+        "uuid": "6699299c-42f6-4eec-a3c2-0f8dadb61b69",
+        "title": "About",
+        "type": "page",
+        "created": "2018-05-02T09:09:51-04:00",
+        "changed": "2020-07-16T16:30:09-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "261"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1594931409"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/about",
+                "pid": "45",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": {
+                "value": "<p><span><span><span>I live in South-Central Pennsylvania, but I work remotely as a UX Engineer for a web development agency.&nbsp; I’ve been in the IT field for over 20 years in various roles but with a focus on front-end development and UX/UI for web applications and content management systems.&nbsp; In recent years, I’ve also put my skills to use in my community volunteering as a web master for two non-profits.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>My favorite part of web development is working with Drupal, and I enjoy documenting my experiences (both good and bad!) in my <a href=\"/blog\">Blog</a>.&nbsp; I'm a member of the Drupal&nbsp;<br />\r\nAssociation and an <a href=\"https://www.acquia.com/customer-success/learning-services/acquia-certification-program\">Acquia Certified Site Builder for Drupal 8</a>.</span></span></span></p>\r\n\r\n<p><span><span><span>Outside of the office, I put on my artistic hat and/or my DIY hat and busy myself with everything from minor home renovations to art and crafts, painting, jewelry making, wine-making, and anything that allows me to be creative.&nbsp; </span></span></span></p>\r\n\r\n<p><span><span><span>I love sci-fi, craft beer, the Pittsburgh Steelers, coffee, extra-large handbags, and Android OS.&nbsp; I like my steak cooked to medium, prefer driving over flying, and I’m equally as happy surrounded by noise and friends as I am sitting quietly on my front porch.</span></span></span></p>\r\n\r\n<p><span><span><span>Whether it’s technical or creative, I’m passionate about doing things well and to the best of my ability, and this website is a tribute to that.&nbsp; &nbsp;&nbsp;&nbsp;</span></span></span></p>\r\n",
+                "summary": "",
+                "format": "full_html"
+            },
+            "layout_builder__layout": {
+                "section": {}
+            }
+        }
+    },
+    {
+        "id": "48",
+        "uuid": "3ec15b38-ec0f-4791-a5d6-07d3331aadcb",
+        "title": "Maintain ",
+        "type": "page",
+        "created": "2019-01-31T09:15:00-05:00",
+        "changed": "2019-01-31T09:15:24-05:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "144"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1548944124"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/maintenance",
+                "pid": "68",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": [],
+            "layout_builder__layout": []
+        }
+    },
+    {
+        "id": "55",
+        "uuid": "56dd5f16-d480-4e58-aea0-05c65be30724",
+        "title": "test",
+        "type": "page",
+        "created": "2019-09-17T11:28:30-04:00",
+        "changed": "2019-09-17T11:28:55-04:00",
+        "published": true,
+        "author_id": "1",
+        "fields": {
+            "vid": {
+                "value": "243"
+            },
+            "langcode": {
+                "value": "en"
+            },
+            "revision_timestamp": {
+                "value": "1568734135"
+            },
+            "revision_uid": {
+                "target_id": "1"
+            },
+            "revision_log": [],
+            "promote": {
+                "value": "0"
+            },
+            "sticky": {
+                "value": "0"
+            },
+            "default_langcode": {
+                "value": "1"
+            },
+            "revision_default": {
+                "value": "1"
+            },
+            "revision_translation_affected": {
+                "value": "1"
+            },
+            "path": {
+                "alias": "/test",
+                "pid": "75",
+                "langcode": "en"
+            },
+            "menu_link": [],
+            "body": [],
+            "layout_builder__layout": []
+        }
+    }
+]

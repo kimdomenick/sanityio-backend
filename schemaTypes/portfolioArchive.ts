@@ -55,6 +55,13 @@ export default defineType({
       initialValue: true,
     }),
     defineField({
+      name: 'year',
+      title: 'Year',
+      type: 'number',
+      description: 'Year of the portfolio item (e.g., 2024)',
+      validation: (Rule) => Rule.integer().min(1900).max(2100),
+    }),
+    defineField({
       name: 'authorId',
       title: 'Author ID',
       type: 'string',

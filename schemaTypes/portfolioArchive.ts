@@ -128,8 +128,8 @@ export default defineType({
       name: 'portfolioCategory',
       title: 'Portfolio Category',
       type: 'array',
-      of: [{type: 'string'}],
-      description: 'Categories from Drupal (e.g., Graphic Design, Drupal Sites)',
+      of: [{type: 'reference', to: [{type: 'category'}]}],
+      description: 'Categories for this portfolio item',
     }),
     defineField({
       name: 'siteStatus',

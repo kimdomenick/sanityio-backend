@@ -10,7 +10,8 @@
     "build": "sanity build",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
-    "import": "tsx scripts/import-drupal-content.ts"
+    "import": "tsx scripts/import-drupal-content.ts",
+    "migrate-categories": "tsx scripts/migrate-categories.ts"
   },
   "keywords": [
     "sanity"

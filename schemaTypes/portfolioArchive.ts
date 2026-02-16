@@ -132,6 +132,13 @@ export default defineType({
       description: 'Categories for this portfolio item',
     }),
     defineField({
+      name: 'portfolioType',
+      title: 'Portfolio Type',
+      type: 'reference',
+      to: [{type: 'portfolioType'}],
+      description: 'Type of portfolio item (e.g., Tech/Development, Creative)',
+    }),
+    defineField({
       name: 'siteStatus',
       title: 'Site Status',
       type: 'string',

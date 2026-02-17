@@ -11,7 +11,8 @@
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "import": "tsx scripts/import-drupal-content.ts",
-    "migrate-categories": "tsx scripts/migrate-categories.ts"
+    "migrate-categories": "tsx scripts/migrate-categories.ts",
+    "migrate-body": "tsx scripts/migrate-body-field.ts"
   },
   "keywords": [
     "sanity"

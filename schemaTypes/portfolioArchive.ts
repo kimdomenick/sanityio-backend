@@ -199,6 +199,13 @@ export default defineType({
       description: 'Type of portfolio item (e.g., Tech/Development, Creative)',
     }),
     defineField({
+      name: 'portfolioSubType',
+      title: 'Portfolio Sub Type',
+      type: 'reference',
+      to: [{type: 'portfolioSubType'}],
+      description: 'Sub type of portfolio item (e.g., Frontend, Backend)',
+    }),
+    defineField({
       name: 'siteStatus',
       title: 'Site Status',
       type: 'string',

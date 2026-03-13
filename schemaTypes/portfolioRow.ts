@@ -79,6 +79,12 @@ export default defineType({
       type: 'array',
       of: [{type: 'reference', to: [{type: 'category'}]}],
     }),
+    defineField({
+      name: 'sortOrder',
+      title: 'Sort Order',
+      type: 'number',
+      validation: (Rule) => Rule.integer(),
+    }),
   ],
   preview: {
     select: {
